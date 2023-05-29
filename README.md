@@ -1,7 +1,7 @@
 
 # RESPONSIVE WEBSITE
-**``` Use of frontend concept to create a dynamic website```**
-- link = https://Radioactive-Ant.github.io
+**``` Use of frontend concept to create a responsive  website```**
+- link = https://Happilli.github.io
 ## Acknowledgements
 
  - [JAVASCRIPT](https://en.wikipedia.org/wiki/JavaScript)
@@ -12,7 +12,7 @@
  
 
 ## Authors
-- [Safal](https://www.github.radioactive-ant)
+- [Safal](https://www.github.com/happilli)
 
 
 ## Website Status
@@ -41,8 +41,7 @@
 
 
 ## License
-
-[MIT](https://choosealicense.com/licenses/mit/)
+-->Genral Public 
 
 
 ## Run Locally
@@ -50,13 +49,13 @@
 Clone the project
 
 ```bash
-  git clone https://github.com/Loftyvirus/Radioactive-Ant.github.io
+  git clone https://github.com/Happilli/Happilli.github.io
 ```
 
 Go to the project directory
 
 ```bash
-  cd Radioactive-Ant.github.io
+  cd Happilli.github.io
 ```
 
 Start the web
@@ -68,19 +67,17 @@ Start the web
 
 
 ## Screenshots
-![Phink](https://user-images.githubusercontent.com/99072350/235323253-23867e14-732c-4b21-9ad0-3c2845b4989a.png)
-![PcinK](https://user-images.githubusercontent.com/99072350/235323254-eeb07add-260d-4853-bbf4-8550295a4f59.png)
 
 
 
 ## Support
 
-For support, email whysafalisop@gmail.com or dm me on my social handle. 
+For support, email safalisgod@gmail.com or dm me on my social handle. 
 
 
 ## 🚀 About Me
 # Hi, I'm Safal Lama! 👋
-In A learning phase, BCA 1st sem student at PU.
+In A learning phase, BCA 2nt sem / 1st Year student at PU.
 
 ## 🔗 Links
 
