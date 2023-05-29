@@ -22,7 +22,7 @@
 
 ## Demo
 
-![TUTO](https://user-images.githubusercontent.com/99072350/235325736-6db70dd4-877a-4c39-afb0-20ad7a4e3a83.gif)
+
 
 
 
@@ -67,6 +67,8 @@ Start the web
 
 
 ## Screenshots
+![Screenshot (4)](https://github.com/Happilli/Happilli.github.io/assets/133653188/7f314f89-3490-4a6e-a4d6-df52646f504b)
+![Screenshot (5)](https://github.com/Happilli/Happilli.github.io/assets/133653188/064faf03-585c-4f7d-b14b-7279e54c9b8a)
 
 
 
