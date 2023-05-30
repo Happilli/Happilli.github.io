@@ -213,7 +213,13 @@ border-radius: 50px;
     }
 
 
-
+.down{
+    text-decoration: none;
+    color: white;
+}
+.down:hover{
+    color: aquamarine;
+}
 
 
 
