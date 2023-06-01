@@ -9,6 +9,7 @@
  - [HTML](https://en.wikipedia.org/wiki/HTML)
  - [VS CODE](https://en.wikipedia.org/wiki/Visual_Studio_Code)
  - [GITHUB](https://en.wikipedia.org/wiki/Github)
+ - [GPT](https://chat.openai.com/)
  
 
 ## Authors
