@@ -18,6 +18,18 @@ html{
     border-radius: 100%;
     margin: 5px;
 }
+nav {
+    background-color: #262626;
+    height: 60px;
+    z-index:500; 
+    width: 100%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    -webkit-box-shadow: 0px 0px 8px 0px #000000;
+    -moz-box-shadow: 0px 0px 8px 0px #000000;
+    box-shadow: 0px 0px 8px 0px #000000;
+}
 
 .navbar{
     display: flex;
