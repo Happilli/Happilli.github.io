@@ -84,7 +84,7 @@ padding: 0 23px;
 }
 
 .firstsection{
-    height: 85vh;
+    height: 80vh;
 }
 
 .box-main{
@@ -183,8 +183,8 @@ padding: 0 23px;
 
 .imgfluid{
 width: 100%;
-border:4px solid cyan;
-border-radius: 50px;
+border:4px solid rgb(17, 17, 17);
+border-radius: 100%;
 }
 
 .paras{
