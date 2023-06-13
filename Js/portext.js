@@ -1,4 +1,4 @@
 var typed = new Typed('#element', {
     strings: ['< / > copy and Paste ','< / > copy and Paste ','< / > copy and Paste ','< / > copy and Paste ','< / > copy and Paste ','< / > copy and Paste '],
-    typeSpeed: 90,
+    typeSpeed: 20,
   });
