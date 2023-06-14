@@ -18,3 +18,10 @@
             width: 450px;
             height: 450px;
         }
+        body::-webkit-scrollbar{
+            display: none;
+           
+        }
+        html{
+            scrollbar-width: none;
+        }
