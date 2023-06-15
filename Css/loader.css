@@ -14,37 +14,103 @@
             background-size: cover;
         }
 
-        .lds-hourglass {
-          display: inline-block;
-          position: relative;
-          width: 80px;
-          height: 80px;
+
+        @keyframes ldio-jsojg0tx18q {
+          0% { transform: rotate(0) }
+          100% { transform: rotate(360deg) }
         }
-        .lds-hourglass:after {
-          content: " ";
-          display: block;
+        .ldio-jsojg0tx18q div { box-sizing: border-box!important }
+        .ldio-jsojg0tx18q > div {
+          position: absolute;
+          width: 152.32000000000002px;
+          height: 152.32000000000002px;
+          top: 35.84px;
+          left: 35.84px;
           border-radius: 50%;
-          width: 0;
-          height: 0;
-          margin: 8px;
-          box-sizing: border-box;
-          border: 32px solid rgb(146, 255, 4);
-          border-color: rgb(146, 255, 4) transparent rgb(146, 255, 4) transparent;
-          animation: lds-hourglass 1.2s infinite;
+          border: 17.92px solid #000;
+          border-color: #7b57e2 transparent #7b57e2 transparent;
+          animation: ldio-jsojg0tx18q 1s linear infinite;
         }
-        @keyframes lds-hourglass {
-          0% {
-            transform: rotate(0);
-            animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
-          }
-          50% {
-            transform: rotate(900deg);
-            animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-          }
-          100% {
-            transform: rotate(1800deg);
-          }
+        
+        .ldio-jsojg0tx18q > div:nth-child(2), .ldio-jsojg0tx18q > div:nth-child(4) {
+          width: 112.00000000000001px;
+          height: 112.00000000000001px;
+          top: 56.00000000000001px;
+          left: 56.00000000000001px;
+          animation: ldio-jsojg0tx18q 1s linear infinite reverse;
         }
+        .ldio-jsojg0tx18q > div:nth-child(2) {
+          border-color: transparent #1bff00 transparent #1bff00
+        }
+        .ldio-jsojg0tx18q > div:nth-child(3) { border-color: transparent }
+        .ldio-jsojg0tx18q > div:nth-child(3) div {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          transform: rotate(45deg);
+        }
+        .ldio-jsojg0tx18q > div:nth-child(3) div:before, .ldio-jsojg0tx18q > div:nth-child(3) div:after { 
+          content: "";
+          display: block;
+          position: absolute;
+          width: 17.92px;
+          height: 17.92px;
+          top: -17.92px;
+          left: 49.28px;
+          background: #7b57e2;
+          border-radius: 50%;
+          box-shadow: 0 134.4px 0 0 #7b57e2;
+        }
+        .ldio-jsojg0tx18q > div:nth-child(3) div:after {
+          left: -17.92px;
+          top: 49.28px;
+          box-shadow: 134.4px 0 0 0 #7b57e2;
+        }
+        
+        .ldio-jsojg0tx18q > div:nth-child(4) { border-color: transparent; }
+        .ldio-jsojg0tx18q > div:nth-child(4) div {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          transform: rotate(45deg);
+        }
+        .ldio-jsojg0tx18q > div:nth-child(4) div:before, .ldio-jsojg0tx18q > div:nth-child(4) div:after {
+          content: "";
+          display: block;
+          position: absolute;
+          width: 17.92px;
+          height: 17.92px;
+          top: -17.92px;
+          left: 29.120000000000005px;
+          background: #1bff00;
+          border-radius: 50%;
+          box-shadow: 0 94.08000000000001px 0 0 #1bff00;
+        }
+        .ldio-jsojg0tx18q > div:nth-child(4) div:after {
+          left: -17.92px;
+          top: 29.120000000000005px;
+          box-shadow: 94.08000000000001px 0 0 0 #1bff00;
+        }
+        .loadingio-spinner-double-ring-724qfghyciw {
+          width: 224px;
+          height: 224px;
+          display: inline-block;
+          overflow: hidden;
+          background: #ffffff;
+        }
+        .ldio-jsojg0tx18q {
+          width: 100%;
+          height: 100%;
+          position: relative;
+          transform: translateZ(0) scale(1);
+          backface-visibility: hidden;
+          transform-origin: 0 0; 
+        }
+        .ldio-jsojg0tx18q div { box-sizing: content-box; }
+     
+
+
+
         body::-webkit-scrollbar{
             display: none;
            
