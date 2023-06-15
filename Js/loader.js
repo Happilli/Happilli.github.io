@@ -10,6 +10,6 @@
                     loader.remove();
                     content.style.display = "block"; // Show the content after the loader is removed
                     content.classList.add("show-content");
-                }, 1100); // Remove loader after 0.3s transition
-            }, 1000);
+                }, 300); // Remove loader after 0.3s transition
+            }, 300);
         });
