@@ -19,7 +19,7 @@ body {
     display: inline-block;
     margin: 20px;
     padding: 20px;
-    background-color: #f5f5f5;
+    background-color: #896af8;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
@@ -37,7 +37,7 @@ body {
     display: inline-block;
     padding: 10px 20px;
     background-color: #4CAF50;
-    color: #fff;
+    color: #ffffff;
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s ease;
@@ -101,6 +101,7 @@ body {
     font-size: large;
     font-family: 'Poppins',Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: #f5f5f5;
+    cursor: pointer;
    }
    nav a:hover{
      color: greenyellow;
@@ -131,6 +132,7 @@ body {
   .title {
     font-size: x-large;
     font-weight: bold;
+    color: greenyellow;
     margin: 0;
     padding: 0;
     font-family: 'Poppins','Courier New', Courier, monospace;
