@@ -19,7 +19,7 @@ body {
     display: inline-block;
     margin: 20px;
     padding: 20px;
-    background-color: #896af8;
+    background-color: #525252;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
@@ -127,6 +127,9 @@ body {
   
   .theme-icon.dark:before {
     content: "🌙";
+  }
+  .vade{
+    color: #575757;
   }
   
   .title {
