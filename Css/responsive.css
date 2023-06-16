@@ -94,5 +94,17 @@
         padding: 0 1px;
     }
        
+    .text-footer{
+        font-family: 'Poppins', sans-serif;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 0;
+        font-size: large;
+        color: grey;
+        cursor: pointer;
+    }
+    
     
 }
