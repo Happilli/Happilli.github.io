@@ -46,12 +46,12 @@
     .section-left{
         flex-direction: column-reverse;
         background-color: black;
-        max-width: 100%;
+        max-width: 125%;
     }
     .section{
         flex-direction: column-reverse;
         background-color: black;
-        max-width: 100%;
+        max-width: 125%;
 
     }
     .firstsection{
