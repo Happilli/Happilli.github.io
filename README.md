@@ -1,6 +1,6 @@
 
 # RESPONSIVE WEBSITE
-**``` Use of frontend concept to create a responsive  website```**
+**``` React Js Usage in certain future ```**
 - link = https://Happilli.github.io
 ## Acknowledgements
 
