@@ -1,11 +1,4 @@
-  var typed = new Typed('#typed', {
-    strings: ['Hi there!', 'This is Safal\'s personal server.'],
-    typeSpeed: 40,
-    backSpeed: 30,
-    loop: true
-  });
-
-  function toggleTheme() {
+   function toggleTheme() {
     document.body.classList.toggle('dark-mode');
   }
 
