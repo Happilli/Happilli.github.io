@@ -1,6 +1,6 @@
 
 # RESPONSIVE WEBSITE
-**``` React Js Usage in certain future ```**
+**``` Jekyll usage in certain future```**
 - link = https://Happilli.github.io
 ## Acknowledgements
 
