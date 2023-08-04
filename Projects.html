@@ -23,35 +23,55 @@
         <div class="carousel">
             <div class="arrow arrow-left" onclick="prevProject()">&#9664;</div>
             <div class="project-card full-width">
-                <!-- Content for the first project card -->
                 <div class="project-logo"></div>
                 <h2>Nostalgic</h2>
                 <p class="project-description">This One is Secret</p>
                 <a class="download-button" href="./Nostalgic">Visit</a>
             </div>
             <div class="project-card half-width">
-                <!-- Content for the second project card -->
                 <div class="project-logo"></div>
                 <h2>C Basics</h2>
                 <p class="project-description">Documentation Of Basic C programs</p>
                 <a class="download-button" href="Sacred_/Bca.pdf" download="C Documentation">Download</a>
             </div>
+           
             <div class="project-card half-width">
-                <!-- Content for the third project card -->
-                <div class="project-logo"></div>
+                <div class="project-logo">
+                    <img src="logo1.jpg" alt="KPS-SYSTEM">
+                </div>
+                <h2>KPS-System</h2>
+                <p class="project-description">C-Project related to Oxford College of Engineering Management 2nd Semester.</p>
+                <a class="download-button" href="./KPS-System">Overview</a>
+            </div>
+
+            <div class="project-card half-width">
+                <div class="project-logo">
+                    <img src="" alt="stay tuned">
+                </div>
                 <h2>Pending</h2>
                 <p class="project-description">Will be updating...</p>
-                <a class="download-button" href="" download>Download</a>
             </div>
             <div class="arrow arrow-right" onclick="nextProject()">&#9654;</div>
-            <!-- Add more project cards as needed -->
         </div>
     </section>
+  
+   
+<section class="latest-project">
+    <div class="latest-link-box">
+        <a class="latest-link" href="https://github.com/RyuZinOh/RyuZinOh.github.io">Github Latest Project</a>
+        <div class="tooltip">"It's about atarashi gakkou fanpage"</div>
+    </div>
+</section>
+
+
+
+
+
     <script src="Js/theme.js"></script>
     <script src="Js/loader.js"></script>
     <script>
         const projectCards = document.querySelectorAll('.project-card');
-        let currentIndex = 1; // Start with the first project card
+        let currentIndex = 1;
 
         function showProject(index) {
             projectCards.forEach((card, i) => {
@@ -75,7 +95,6 @@
             showProject(currentIndex);
         }
 
-        // Initially show the first project card
         showProject(currentIndex);
     </script>
 </body>

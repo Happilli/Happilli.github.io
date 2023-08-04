@@ -10,9 +10,61 @@ body {
 }
 
 .dark-theme {
-    background-color: #333;
+    background-color: #000;
     color: #fff;
 }
+
+.dark-theme nav {
+    background-color: #000;
+}
+
+.light-theme nav {
+    background-color: #f5f5f5;
+}
+.light-theme nav a {
+  color: black;
+}
+/* Adjust the color of "PROJECTS" text in light mode */
+.light-theme .vade {
+  color: black;
+}
+/* Adjust the color of "PROJECTS" text in light mode */
+.light-theme .vade {
+  color: black;
+}
+
+/* Enhance project card styling for night mode */
+.dark-theme .project-card {
+  background-color: black;
+  border: 2px solid white;
+  color: white;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dark-theme .project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgb(0, 251, 226);
+}
+
+.project-card h2 {
+  font-size: 24px;
+  margin-top: 15px;
+  color: white;
+}
+
+.project-description {
+  font-size: 16px;
+  color: #ccc;
+}
+
+.dark-theme .project-description {
+  color: #ddd;
+}
+
+.project-card .download-button {
+  background-color: #45a049;
+}
+
 
 .projects-section {
     padding: 40px 20px;
@@ -20,10 +72,10 @@ body {
 }
 
 .carousel {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .project-card {
@@ -36,31 +88,42 @@ body {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: white;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .project-card h2 {
-    font-size: 20px;
-    margin-top: 10px;
-    color: greenyellow; /* Change project title color */
+    font-size: 24px;
+    margin-top: 15px;
+    color: #000000;
 }
+.dark-theme .project-card h2{
+    font-size: 24px;
+    margin-top: 15px;
+    color: #ffffff;
 
+}
 .project-logo {
     width: 100px;
     height: 100px;
     background-color: #f5f5f5;
     margin: 0 auto 10px;
     border-radius: 50%;
-    border: 2px solid black; /* Add border color */
+    border: 2px solid black;
 }
 
 .project-description {
-    font-size: 14px;
-    color: #575757;
+    font-size: 16px;
+    color: #080808;
 }
 
 .dark-theme .project-description {
-    color: #fff; /* Change project description color in dark mode */
+    color: #ffffff;
 }
 
 .project-card .download-button {
@@ -79,11 +142,11 @@ body {
 }
 
 .navigation-button {
-    display: block;
+    display: inline-block;
     margin: 20px auto;
-    padding: 10px 20px;
+    padding: 10px 25px;
     background-color: #4CAF50;
-    color: #ffffff;
+    color: white;
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s ease;
@@ -96,42 +159,46 @@ body {
     background-color: #45a049;
 }
 
+
+/* Increase the size of navigation bar */
 nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 50px;
-    background-color: #333;
-    padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px; /* Increase the height */
+  padding: 0 40px; /* Increase the padding */
 }
 
 nav a {
-    text-decoration: none;
-    font-size: large;
-    color: #f5f5f5;
-    cursor: pointer;
+  text-decoration: none;
+  font-size: x-large; /* Increase the font size */
+  color: #f5f5f5;
+  cursor: pointer;
 }
+
 
 nav a:hover {
     color: greenyellow;
 }
 
+/* Increase the size of theme icon */
 .theme-icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 30px;
-    height: 30px;
-    background-color: #fff;
-    border-radius: 50%;
-    cursor: pointer;
-    transition: background-color 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px; /* Increase the width */
+  height: 40px; /* Increase the height */
+  background-color: #f5f5f5;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .theme-icon:before {
-    content: "☀";
-    font-size: 14px;
-    transition: transform 0.3s, color 0.3s;
+  content: "☀";
+  font-size: 20px; /* Increase the font size */
+  transition: transform 0.3s, color 0.3s;
 }
 
 .theme-icon.dark:before {
@@ -150,11 +217,11 @@ nav a:hover {
     padding: 0;
 }
 
-
 .title span {
-    color: white; /* Change MY PROJECTS header color to white */
-  }
-  .arrow {
+    color: white;
+}
+
+.arrow {
     font-size: 24px;
     cursor: pointer;
     transition: transform 0.2s;
@@ -165,10 +232,76 @@ nav a:hover {
     transform: scale(1.1);
 }
 
-/* Responsive Styles */
-
 @media screen and (max-width: 767px) {
     .project-card {
         max-width: 100%;
     }
 }
+.project-logo img {
+  width: 100%; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+}
+.dark-theme .project-logo img {
+  filter: invert(1); /* Invert the image to appear white in dark mode */
+}
+
+
+/* ...existing styles... */
+
+.latest-project {
+  text-align: center;
+  padding: 40px 20px;
+  position: relative; /* Position the section for centering */
+}
+
+.latest-link-box {
+  margin-top: 20px;
+  display: inline-block;
+  position: absolute;
+  bottom: -20px; /* Position the box below the project cards */
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.latest-link-box .latest-link {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.latest-link-box .latest-link:hover {
+  background-color: #45a049;
+}
+
+/* Tooltip styles */
+.latest-link-box .tooltip {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  top: -35px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-size: 14px;
+  white-space: nowrap;
+  z-index: 1;
+  transition: opacity 0.2s;
+}
+
+.latest-link-box:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* ...remaining existing styles... */
+
+
+
