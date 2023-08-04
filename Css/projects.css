@@ -237,17 +237,33 @@ nav a:hover {
         max-width: 100%;
     }
 }
-.project-logo img {
-  width: 100%; /* Adjust the width as needed */
-  height: auto; /* Maintain aspect ratio */
+.project-card.half-width .project-logo {
+  width: 100px;
+  height: 100px;
+  background-color: #f5f5f5;
+  margin: 0 auto 10px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
 }
+
+.project-card.half-width .project-logo img {
+  display: block; /* Ensure the image behaves as a block element */
+  width: 150%;
+  max-width: 150%;
+  object-fit: contain;
+  object-position: center;
+}
+
+
+
+
+
 .dark-theme .project-logo img {
   filter: invert(1); /* Invert the image to appear white in dark mode */
 }
-
-
-/* ...existing styles... */
-
 .latest-project {
   text-align: center;
   padding: 40px 20px;
@@ -301,7 +317,6 @@ nav a:hover {
   opacity: 1;
 }
 
-/* ...remaining existing styles... */
 
 
 
