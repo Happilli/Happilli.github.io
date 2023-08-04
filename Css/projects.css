@@ -201,8 +201,13 @@ nav a:hover {
   transition: transform 0.3s, color 0.3s;
 }
 
+.theme-icon.dark {
+  background-color: black;
+}
+
 .theme-icon.dark:before {
-    content: "🌙";
+  content: "🌙";
+  color: white; /* Change the moon icon color */
 }
 
 .vade {
