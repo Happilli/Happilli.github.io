@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="icon" type="image/x-icon" href="Sacred_/Ryuga.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link href="Css/projects.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="Css/loader.css">
     <title>My Projects</title>
@@ -19,24 +20,60 @@
         <div class="theme-icon" onclick="toggleTheme()"></div>
     </nav>
     <section class="projects-section">
-        <div class="project-card">
-            <h2>Nostalgic</h2>
-            <p>This One is Secret</p>
-            <a class="download-button" href="./Nostalgic">Visit</a>
+        <div class="carousel">
+            <div class="project-card">
+                <div class="project-logo"></div>
+                <h2>Nostalgic</h2>
+                <p class="project-description">This One is Secret</p>
+                <a class="download-button" href="./Nostalgic">Visit</a>
+            </div>
+            <div class="project-card">
+                <div class="project-logo"></div>
+                <h2>C Basics</h2>
+                <p class="project-description">Documentation Of Basic C programs</p>
+                <a class="download-button" href="Sacred_/Bca.pdf" download="C Documentation">Download</a>
+            </div>
+            <div class="project-card">
+                <div class="project-logo"></div>
+                <h2>Pending</h2>
+                <p class="project-description">Will be updating...</p>
+                <a class="download-button" href="" download>Download</a>
+            </div>
+            <!-- Add more project cards as needed -->
         </div>
-        <div class="project-card">
-            <h2>C Basics</h2>
-            <p>Documentation Of Basic C programs</p>
-            <a class="download-button" href="Sacred_/Bca.pdf" download="C Documentation">Download</a>
-        </div>
-        <div class="project-card">
-            <h2>Pending</h2>
-            <p>will be updating..</p>
-            <a class="download-button" href="" download>Download</a>
-        </div>
+        <button id="prevButton" class="navigation-button">Previous</button>
+        <button id="nextButton" class="navigation-button">Next</button>
     </section>
     <script src="Js/theme.js"></script>
     <script src="Js/tweak.js"></script>
     <script src="Js/loader.js"></script>
+    <script>
+        const projectCards = document.querySelectorAll('.project-card');
+        const prevButton = document.getElementById('prevButton');
+        const nextButton = document.getElementById('nextButton');
+        let currentIndex = 0;
+
+        function showProject(index) {
+            projectCards.forEach(card => {
+                card.style.transform = `translateX(-${index * 100}%)`;
+            });
+        }
+
+        function nextProject() {
+            currentIndex = (currentIndex + 1) % projectCards.length;
+            showProject(currentIndex);
+        }
+
+        function prevProject() {
+            currentIndex = (currentIndex - 1 + projectCards.length) % projectCards.length;
+            showProject(currentIndex);
+        }
+
+        nextButton.addEventListener('click', nextProject);
+        prevButton.addEventListener('click', prevProject);
+
+        // Initially show the first project card
+        showProject(currentIndex);
+    </script>
 </body>
 </html>
