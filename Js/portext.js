@@ -1,5 +1,5 @@
 var typed = new Typed('#element', {
-    strings: ['< / > copy and Paste '],
+    strings: ['< / > Discord Bot Developer '],
     typeSpeed: 25,
     loop: true
 });
