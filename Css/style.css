@@ -15,7 +15,7 @@ html{
 
 .logo img {
     width: 65%;
-    border: 3px solid rgb(8, 8, 8);
+    border: 3px solid rgb(250, 250, 250);
     border-radius: 100%;
     margin: 5px;
     box-shadow: 0 0 10px 5px rgb(2, 251,255); /* Initial shadow style */
