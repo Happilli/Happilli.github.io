@@ -70,7 +70,7 @@
     
     .secondhalf img{
         padding-left: 0%;
-        width: 115px;
+        /* width: 115px; */
         height:130px;
         display: block;
         margin: auto;
