@@ -2,99 +2,49 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="Sacred_/Ryuga.ico">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <link href="Css/projects.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="Css/projects.css">
     <link rel="stylesheet" href="Css/loader.css">
-    <title>My Projects</title>
+    <title>projects</title>
 </head>
 <body>
     <div id="loader">
-        <div class="lds-hourglass"></div>
+        <div class="loadingio-spinner-bean-eater-hsc5wpftlj"><div class="ldio-zwq358rvuhm">
+            <div><div></div><div></div><div></div></div><div><div></div><div></div><div></div></div>
+            </div></div>
     </div>
-    <nav>
-        <a href="./index">Back</a>
-        <h1 class="title">MY<span class="vade">PROJECTS</span></h1>
-        <div class="theme-icon" onclick="toggleTheme()"></div>
-    </nav>
-    <section class="projects-section">
-        <div class="carousel">
-
-            <div class="arrow arrow-left" onclick="prevProject()">&#9664;</div>
-            <div class="project-card full-width half-width">
-                <div class="project-logo">
-                    <img src="./Sacred_/panther.jpg" alt="Nostalgic">
-                </div>
-                <h2>Nostalgic</h2>
-                <p class="project-description">This One is Secret</p>
-                <a class="download-button" href="./Nostalgic">Visit</a>
-            </div>
-
-            
-            <div class="project-card half-width">
-                <div class="project-logo">
-                    <img src="./Sacred_/kps-logo.png" alt="KPS-SYSTEM">
-                </div>
-                <h2>KPS-System</h2>
-                <p class="project-description">C-Project related to Oxford College of Engineering Management 2nd Semester.</p>
-                <a class="download-button" href="./KPS-System">Overview</a>
-            </div>
-            
-
-            <div class="project-card half-width">
-                <div class="project-logo">
-                    <img src="./Sacred_/inprogress.png" alt="stay tuned">
-                </div>
-                <h2>Pending</h2>
-                <p class="project-description">Will be updating...</p>
-            </div>
-            <div class="arrow arrow-right" onclick="nextProject()">&#9654;</div>
-        </div>
-    </section>
+    <button class="theme-button" onclick="toggleTheme()"><i class="fa fa-adjust"></i></button>
+    <button class="menu-icon" onclick="toggleMenu()"><i class="fa fa-bars"></i><i class="fa fa-times"></i></button>
+    <div class="container">
+      <h1>SAFAL LAMA</h1>
+      <p class="intro" id="typed"></p>
+      <div class="social-icons">
+        <a href="#" class="icon"><i class="fa fa-discord"></i></a>
+        <a href="https://www.facebook.com/safal.lama.726" class="icon"><i class="fa fa-facebook"></i></a>
+        <a href="https://www.instagram.com/happillli_/" class="icon"><i class="fa fa-instagram"></i></a>
+        <a href="https://github.com/Happilli" class="icon"><i class="fa fa-github"></i></a>
+      </div>
+    </div>
+    <div class="projects-container">
+     
+<ul class="projects-list">
+    <li><a href="https://github.com/Happilli/Expertise" data-info="A discord Bot to manage a single server for poketwo duel, exclusive !">Expertise</a></li>
+    <li><a href="https://github.com/RyuZinOh/KPS-System" data-info="BCA 2nd semester project of c program ">KPS-System</a></li>
+    <li><a href="https://github.com/Happilli/projectEarth" data-info="Link tracker made using JS only">ProjectEarth</a></li>
+  </ul>
   
-   
-<section class="latest-project">
-    <div class="latest-link-box">
-        <a class="latest-link" href="https://github.com/RyuZinOh/RyuZinOh.github.io">Github Latest Project</a>
-        <div class="tooltip">"Expertise Discord Bot "</div>
     </div>
-</section>
-
-
-
-
-
-    <script src="Js/theme.js"></script>
-    <script src="Js/loader.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
     <script>
-        const projectCards = document.querySelectorAll('.project-card');
-        let currentIndex = 1;
-
-        function showProject(index) {
-            projectCards.forEach((card, i) => {
-                if (i === index) {
-                    card.style.display = 'block';
-                    card.style.opacity = '1';
-                } else {
-                    card.style.display = 'none';
-                    card.style.opacity = '0';
-                }
-            });
-        }
-
-        function nextProject() {
-            currentIndex = (currentIndex + 1) % projectCards.length;
-            showProject(currentIndex);
-        }
-
-        function prevProject() {
-            currentIndex = (currentIndex - 1 + projectCards.length) % projectCards.length;
-            showProject(currentIndex);
-        }
-
-        showProject(currentIndex);
+    var typed = new Typed('#typed', {
+    strings: ['welcome to my Project page'],
+    typeSpeed: 40,
+    backSpeed: 30,
+    loop: true
+    });
     </script>
-</body>
+    <script src = "Js/projects.js"></script>
+    <script src="Js/loader.js"></script>
 </html>

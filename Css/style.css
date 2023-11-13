@@ -6,18 +6,35 @@
 html{
     scroll-behavior: smooth;
 }
-.logo{
-    width: 5%;
+.logo {
+    width: 8%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.logo img{
+
+.logo img {
     width: 65%;
     border: 3px solid rgb(8, 8, 8);
     border-radius: 100%;
     margin: 5px;
+    box-shadow: 0 0 10px 5px rgb(255, 0, 0); /* Initial shadow style */
+    transition: box-shadow 0.5s ease; /* Adding transition for smooth animation */
 }
+
+.logo img:hover {
+    animation: glow 1s infinite alternate; /* Using keyframe animation for the glow effect */
+}
+
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 10px 5px rgb(255, 0, 0);
+    }
+    100% {
+        box-shadow: 0 0 20px 10px rgb(255, 0, 0); /* Adjust the values as needed for the desired effect */
+    }
+}
+
 nav {
     background-color: #262626;
     height: 60px;
@@ -48,20 +65,27 @@ nav {
     align-items: center;
     font-family:'Poppins', sans-serif;     
 }
-.nav-list li{
+.nav-list li {
     font-size: larger;
     list-style: none;
     padding: 23px;
+    transition: transform 0.3s ease; /* Adding a transition effect for a smoother scale change */
+}
 
-}
-.nav-list li a{
-text-decoration: none;
-color: rgb(255, 255, 255);
-}
-.nav-list li a:hover{
+.nav-list li a {
     text-decoration: none;
-    color: aquamarine;
-    }
+    color: rgb(255, 255, 255);
+}
+
+.nav-list li:hover {
+    transform: scale(1.1); /* Scale up the navigation item on hover */
+}
+
+.nav-list li a:hover {
+    text-decoration: none;
+    color: rgb(255, 0, 0);
+}
+
 .right-nav{
 /* background-color: rgb(4, 247, 214); */
 width: 30%;
@@ -127,7 +151,7 @@ padding: 0 23px;
     color: rgb(238, 238, 238);
 }
 
-.btn{
+.btn {
     padding: 8px 20px;
     margin: 7px 0;
     border: 3px solid silver;
@@ -136,10 +160,15 @@ padding: 0 23px;
     cursor: pointer;
     font-family: 'Poppins', sans-serif;
     color: white;
+    transition: transform 0.3s ease, color 0.3s ease; /* Adding transitions for smoother scale and color changes */
 }
-.btn:hover{
-    color:aquamarine;
+
+.btn:hover {
+    color: aquamarine; /* Neon purple color */
+    transform: scale(1.1); /* Scale up the button on hover */
 }
+
+
 .btn-sc{
     font-size: larger;
     color: rgb(233, 235, 235);

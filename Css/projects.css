@@ -1,328 +1,240 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
-
 body {
-    font-family: 'Poppins', sans-serif;
-    background-color: #f5f5f5;
-    color: #333;
-    transition: background-color 0.3s, color 0.3s;
-    margin: 0;
-    padding: 0;
+  background-color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #000000;
+  transition: all 0.3s ease;
 }
 
-.dark-theme {
-    background-color: #000;
-    color: #fff;
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
 }
 
-.dark-theme nav {
-    background-color: #000;
+h1 {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 20px;
 }
 
-.light-theme nav {
-    background-color: #f5f5f5;
-}
-.light-theme nav a {
-  color: black;
-}
-/* Adjust the color of "PROJECTS" text in light mode */
-.light-theme .vade {
-  color: black;
-}
-/* Adjust the color of "PROJECTS" text in light mode */
-.light-theme .vade {
-  color: black;
-}
-
-/* Enhance project card styling for night mode */
-.dark-theme .project-card {
-  background-color: black;
-  border: 2px solid white;
-  color: white;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.dark-theme .project-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgb(0, 251, 226);
-}
-
-.project-card h2 {
+.intro {
   font-size: 24px;
-  margin-top: 15px;
-  color: white;
+  margin-bottom: 30px;
 }
 
-.project-description {
-  font-size: 16px;
-  color: #ccc;
+.icon {
+  font-size: 24px;
+  margin-right: 10px;
+  color: #000000; /* Default icon color */
 }
 
-.dark-theme .project-description {
-  color: #ddd;
-}
-
-.project-card .download-button {
-  background-color: #45a049;
-}
-
-
-.projects-section {
-    padding: 40px 20px;
-    text-align: center;
-}
-
-.carousel {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.project-card {
-    width: 100%;
-    max-width: 300px;
-    height: auto;
-    margin: 20px;
-    padding: 20px;
-    border: 2px solid #ccc;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    background-color: white;
-}
-
-.project-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-.project-card h2 {
-    font-size: 24px;
-    margin-top: 15px;
-    color: #000000;
-}
-.dark-theme .project-card h2{
-    font-size: 24px;
-    margin-top: 15px;
-    color: #ffffff;
-
-}
-.project-logo {
-    width: 100px;
-    height: 100px;
-    background-color: #f5f5f5;
-    margin: 0 auto 10px;
-    border-radius: 50%;
-    border: 2px solid black;
-}
-
-.project-description {
-    font-size: 16px;
-    color: #080808;
-}
-
-.dark-theme .project-description {
-    color: #ffffff;
-}
-
-.project-card .download-button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #4CAF50;
-    color: #ffffff;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-    cursor: pointer;
-}
-
-.project-card .download-button:hover {
-    background-color: #45a049;
-}
-
-.navigation-button {
-    display: inline-block;
-    margin: 20px auto;
-    padding: 10px 25px;
-    background-color: #4CAF50;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-    cursor: pointer;
-    border: none;
-    outline: none;
-}
-
-.navigation-button:hover {
-    background-color: #45a049;
-}
-
-
-/* Increase the size of navigation bar */
-nav {
+.social-icons {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  height: 70px; /* Increase the height */
-  padding: 0 40px; /* Increase the padding */
+  margin-top: 50px;
 }
 
-nav a {
+.social-icons a {
+  color: #000000;
+  margin: 0 10px;
   text-decoration: none;
-  font-size: x-large; /* Increase the font size */
-  color: #f5f5f5;
-  cursor: pointer;
 }
 
-
-nav a:hover {
-    color: greenyellow;
-}
-
-/* Increase the size of theme icon */
-.theme-icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 40px; /* Increase the width */
-  height: 40px; /* Increase the height */
-  background-color: #f5f5f5;
-  border-radius: 50%;
-  cursor: pointer;
-  transition: background-color 0.3s;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.theme-icon:before {
-  content: "☀";
-  font-size: 20px; /* Increase the font size */
-  transition: transform 0.3s, color 0.3s;
-}
-
-.theme-icon.dark {
-  background-color: black;
-}
-
-.theme-icon.dark:before {
-  content: "🌙";
-  color: white; /* Change the moon icon color */
-}
-
-.vade {
-    color: #575757;
-}
-
-.title {
-    font-size: x-large;
-    font-weight: bold;
-    color: greenyellow;
-    margin: 0;
-    padding: 0;
-}
-
-.title span {
-    color: white;
-}
-
-.arrow {
-    font-size: 24px;
-    cursor: pointer;
-    transition: transform 0.2s;
-    user-select: none;
-}
-
-.arrow:hover {
-    transform: scale(1.1);
-}
-
-@media screen and (max-width: 767px) {
-    .project-card {
-        max-width: 100%;
-    }
-}
-.project-card.half-width .project-logo {
-  width: 100px;
-  height: 100px;
-  background-color: #f5f5f5;
-  margin: 0 auto 10px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-}
-
-.project-card.half-width .project-logo img {
-  display: block; /* Ensure the image behaves as a block element */
-  width: 150%;
-  max-width: 150%;
-  object-fit: contain;
-  object-position: center;
-}
-
-
-
-
-
-
-.dark-theme .project-logo img {
-  filter: invert(1); /* Invert the image to appear white in dark mode */
-}
-.latest-project {
-  text-align: center;
-  padding: 40px 20px;
-  position: relative; /* Position the section for centering */
-}
-
-.latest-link-box {
-  margin-top: 20px;
-  display: inline-block;
+.theme-button {
   position: absolute;
-  bottom: -20px; /* Position the box below the project cards */
-  left: 50%;
-  transform: translateX(-50%);
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  color: #000000;
+  font-size: 24px;
 }
 
-.latest-link-box .latest-link {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #4CAF50;
+.theme-button:hover {
+  color: #ffffff;
+}
+
+.menu-icon {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  color: #000000;
+  font-size: 24px;
+  z-index: 10; /* Adjusted z-index */
+}
+
+.menu-icon:hover {
+  color: #ffffff;
+}
+
+.menu-icon .fa-times {
+  display: none;
+}
+
+.menu-icon.open .fa-bars {
+  display: none;
+}
+
+.menu-icon.open .fa-times {
+  display: inline;
+}
+
+.projects-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 200px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+  z-index: 5;
+  backdrop-filter: blur(10px); /* Apply a blur effect for acrylic look */
+}
+
+/* Adjust the background color for the dark mode */
+body.dark-mode .projects-container {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Adjust the background color for the light mode */
+body.light-mode .projects-container {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+
+.menu-icon.open ~ .projects-container {
+  transform: translateX(0);
+}
+
+.projects-container a {
   color: #ffffff;
   text-decoration: none;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
-  cursor: pointer;
+  margin: 10px 0;
 }
 
-.latest-link-box .latest-link:hover {
-  background-color: #45a049;
+
+.projects-container a:hover {
+  text-decoration: underline;
 }
 
-/* Tooltip styles */
-.latest-link-box .tooltip {
-  visibility: hidden;
-  opacity: 0;
-  position: absolute;
-  top: -35px;
+.project-info {
+  position: fixed;
+  top: 50%;
   left: 50%;
-  transform: translateX(-50%);
-  background-color: #333;
-  color: #fff;
-  padding: 8px 12px;
-  border-radius: 4px;
-  font-size: 14px;
-  white-space: nowrap;
-  z-index: 1;
-  transition: opacity 0.2s;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #ffffff;
+  border: 2px solid #000000;
+  border-radius: 10px;
+  display: none;
+  z-index: 1000; /* Set a high z-index to ensure it's on top */
+}
+.projects-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.latest-link-box:hover .tooltip {
-  visibility: visible;
-  opacity: 1;
+.projects-list li {
+  margin: 20px 0;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.projects-list a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.projects-list a:hover {
+  color: aquamarine;
+}
+
+/* Dark mode styles */
+body.dark-mode .projects-list a {
+  color: #ffffff;
+}
+
+body.dark-mode .projects-list a:hover {
+  color: aquamarine;
 }
 
 
+/* Theme styles */
+body.dark-mode {
+  background-color: #000000;
+  color: #ffffff;
+}
 
+body.dark-mode .container {
+  color: #ffffff;
+}
 
+body.dark-mode .icon,
+body.dark-mode .social-icons a {
+  color: #ffffff;
+}
+
+body.dark-mode .menu-icon,
+body.dark-mode .theme-button {
+  color: #ffffff;
+}
+
+body.dark-mode .projects-container {
+  background-color: rgba(255, 255, 255, 0.3);
+  color: #ffffff;
+}
+
+body.dark-mode .projects-container a {
+  color: #ffffff;
+}
+
+body.light-mode {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+body.light-mode .container {
+  color: #000000;
+}
+
+body.light-mode .icon,
+body.light-mode .social-icons a {
+  color: #000000;
+}
+
+body.light-mode .menu-icon,
+body.light-mode .theme-button {
+  color: #000000;
+}
+
+body.light-mode .projects-container {
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #000000;
+}
+
+body.light-mode .projects-container a {
+  color: #000000;
+}
