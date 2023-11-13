@@ -18,7 +18,7 @@ html{
     border: 3px solid rgb(8, 8, 8);
     border-radius: 100%;
     margin: 5px;
-    box-shadow: 0 0 10px 5px rgb(255, 0, 0); /* Initial shadow style */
+    box-shadow: 0 0 10px 5px rgb(2, 251,255); /* Initial shadow style */
     transition: box-shadow 0.5s ease; /* Adding transition for smooth animation */
 }
 
@@ -28,10 +28,10 @@ html{
 
 @keyframes glow {
     0% {
-        box-shadow: 0 0 10px 5px rgb(255, 0, 0);
+        box-shadow: 0 0 10px 5px rgb(2, 251, 255);
     }
     100% {
-        box-shadow: 0 0 20px 10px rgb(255, 0, 0); /* Adjust the values as needed for the desired effect */
+        box-shadow: 0 0 20px 10px rgb(2, 251, 255); /* Adjust the values as needed for the desired effect */
     }
 }
 
