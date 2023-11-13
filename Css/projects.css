@@ -238,3 +238,14 @@ body.light-mode .projects-container {
 body.light-mode .projects-container a {
   color: #000000;
 }
+
+.projects-list #back-to-home {
+  color: #ffffff;
+  text-decoration: none;
+  cursor: pointer;
+  margin: 10px 0;
+}
+
+.projects-list #back-to-home:hover {
+  text-decoration: underline;
+}

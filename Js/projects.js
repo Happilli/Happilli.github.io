@@ -23,6 +23,13 @@
         projectsContainer.classList.remove('open');
       }
     }
+ // Add event listener for the back option
+ var backToHome = document.getElementById('back-to-home');
+ backToHome.addEventListener('click', function () {
+     // Replace this with the actual URL of your home page
+     window.location.href = '././index';
+ });
+
   });
 
 
