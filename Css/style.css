@@ -18,7 +18,6 @@ html{
     border: 3px solid rgb(250, 250, 250);
     border-radius: 100%;
     margin: 5px;
-    box-shadow: 0 0 10px 5px rgb(255, 2, 2); /* Initial shadow style */
 }
 
 nav {
