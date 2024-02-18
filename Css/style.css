@@ -7,7 +7,7 @@ html{
     scroll-behavior: smooth;
 }
 .logo {
-    width: 8%;
+    width: 7.5%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -20,8 +20,6 @@ html{
     margin: 5px;
    /* animation: neonAura 1.5s infinite alternate; Adjust the duration as needed */
 }
-
-aaa
 /* 
 @keyframes neonAura {
     0% {
