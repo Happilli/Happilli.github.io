@@ -59,6 +59,7 @@ nav ul li a:hover {
     overflow: hidden; /* Ensure content doesn't overflow */
 }
 
+
 /* Content sections */
 .content {
     position: absolute;
@@ -70,7 +71,7 @@ nav ul li a:hover {
     background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Shadow for the content */
-    transition: opacity 0.3s ease, transform 0.3s ease;
+    transition: background-image 0.5s ease; /* Smooth transition for background image */
     z-index: 1; /* Ensure content is above the background */
     display: none; /* Hide all content sections initially */
     width: calc(100% - 4rem); /* Adjust width for better visibility */
@@ -93,6 +94,22 @@ nav ul li a:hover {
     font-size: 1.1rem;
     margin-bottom: 1.5rem;
 }
+
+/* Add transition for the background image change */
+#about {
+    background-image: url('path_to_your_initial_image.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: background-image 0.5s ease; /* Smooth transition for background image */
+}
+
+/* Define another class for the background change */
+#about.alt {
+    background-image: url('path_to_your_alternate_image.jpg');
+}
+
 
 /* Gallery Slider */
 .gallery {
@@ -183,7 +200,7 @@ footer {
 }
 
 .center img {
-    height: 20px; /* Adjust height as needed */
+    height: 30px; /* Adjust height as needed */
 }
 
 .right {

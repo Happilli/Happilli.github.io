@@ -1,19 +1,22 @@
+// Function to toggle active section and change background image for 'About Me'
 function showSection(sectionId) {
-    // Hide all content sections
-    const sections = document.querySelectorAll('.content');
-    sections.forEach(section => {
+    // Hide all sections
+    document.querySelectorAll('.content').forEach(function(section) {
         section.classList.remove('active');
     });
 
-    // Show the selected section
-    const selectedSection = document.getElementById(sectionId);
-    selectedSection.classList.add('active');
+    // Show selected section
+    document.getElementById(sectionId).classList.add('active');
 
-    // Change background image for About Me section
+    // Change background image for 'About Me' section with smooth transition
     if (sectionId === 'about') {
-        document.querySelector('.parallax').style.backgroundImage = "url('../assets/background_x2.jpeg')";
+        const parallaxElement = document.querySelector('.parallax');
+        parallaxElement.style.transition = "background-image 0.5s ease"; // Smooth transition
+        parallaxElement.style.backgroundImage = "url('../assets/background_x2.jpeg')";
     } else {
         // Reset background image for other sections
-        document.querySelector('.parallax').style.backgroundImage = "url('../assets/backgroundX.jpeg')";
+        const parallaxElement = document.querySelector('.parallax');
+        parallaxElement.style.transition = "background-image 0.5s ease"; // Smooth transition
+        parallaxElement.style.backgroundImage = "url('../assets/backgroundX.jpeg')";
     }
 }
