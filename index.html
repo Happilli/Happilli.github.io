@@ -1,121 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Safa Lama - Portfolio</title>
-    <link rel="stylesheet" href="css/styles.css" />
-    <link rel="icon" href="assets/tab.png" type="image/png" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <header>
-      <nav>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Safa Lama, a passionate web developer.">
+  <meta name="keywords" content="Safa Lama, portfolio, web developer, HTML, CSS, JavaScript">
+  <title>Safa Lama - Portfolio</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/loader.css">
+  <link rel="icon" href="assets/tab.png" type="image/png">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <span class="loader"></span>
+  <header>
+    <nav aria-label="Main Navigation">
+      <ul>
+        <li><a href="#" data-section="about">About</a></li>
+        <li><a href="#" data-section="portfolio">Portfolio</a></li>
+        <li><a href="#" data-section="skills">Skills</a></li>
+        <li><a href="#" data-section="contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="parallax">
+    <section id="about" class="content slide-in active" role="region" aria-labelledby="about-heading">
+      <div class="about-content">
+        <h1 id="about-heading">About Me</h1>
+        <p>Welcome to my portfolio! I am Safa Lama, a passionate web developer.</p>
+      </div>
+    </section>
+
+    <section id="portfolio" class="content slide-in" role="region" aria-labelledby="portfolio-heading">
+      <div>
+        <h1 id="portfolio-heading">Portfolio</h1>
+        <div class="gallery">
+          <div class="gallery-item">
+            <a href="https://github.com/RyuZinOh/KPS-System">
+              <img src="https://media.discordapp.net/attachments/1258640528149581935/1258643630353158235/KPS_system.jpg?ex=6688cab9&is=66877939&hm=bf8accf1fe5c7ee462cd139348e4ec79bace3dcd48fb6182e7afaf4494eb7f58&=&format=webp&width=449&height=449" alt="KPS system logo">
+              <div class="project-details">
+                <h2>KPS-system</h2>
+                <p>BCA 2nd semester group project</p>
+              </div>
+            </a>
+          </div>
+          <div class="gallery-item">
+            <a href="https://github.com/Happilli/Expertise">
+              <img src="https://media.discordapp.net/attachments/1258640528149581935/1258644379833339934/expertise.jpg?ex=6688cb6c&is=668779ec&hm=dd4c0c476f481c2bb9adf3ec71b976f0a887ba034188f47e6755f03243193eb3&=&format=webp&width=449&height=449" alt="Expertise logo">
+              <div class="project-details">
+                <h2>Expertise</h2>
+                <p>Discord bot which manages poketwo bot system [offline]</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="content slide-in" role="region" aria-labelledby="skills-heading">
+      <div>
+        <h1 id="skills-heading">Skills</h1>
+        <div class="skill-cards">
+          <div class="skill-card">
+            <h2>HTML5</h2>
+            <div class="skill-bar">
+              <div class="skill-level html">90%</div>
+            </div>
+          </div>
+          <div class="skill-card">
+            <h2>CSS3</h2>
+            <div class="skill-bar">
+              <div class="skill-level css">85%</div>
+            </div>
+          </div>
+          <div class="skill-card">
+            <h2>JavaScript</h2>
+            <div class="skill-bar">
+              <div class="skill-level js">80%</div>
+            </div>
+          </div>
+          <div class="skill-card">
+            <h2>Python</h2>
+            <div class="skill-bar">
+              <div class="skill-level python">65%</div>
+            </div>
+          </div>
+          <div class="skill-card">
+            <h2>C</h2>
+            <div class="skill-bar">
+              <div class="skill-level c">75%</div>
+            </div>
+          </div>
+          <div class="skill-card">
+            <h2>C++</h2>
+            <div class="skill-bar">
+              <div class="skill-level cpp">70%</div>
+            </div>
+          </div>
+          <div class="skill-card">
+            <h2>Visual Basic (VB)</h2>
+            <div class="skill-bar">
+              <div class="skill-level vb">45%</div>
+            </div>
+          </div>
+          <div class="skill-card">
+            <h2>DBMS (MongoDB, SQL)</h2>
+            <div class="skill-bar">
+              <div class="skill-level dbms">60%</div>
+            </div>
+          </div>
+          <div class="skill-card">
+            <h2>Typing Speed</h2>
+            <div class="skill-bar">
+              <div class="skill-level typing">80-85 WPM</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="content slide-in" role="region" aria-labelledby="contact-heading">
+      <div>
+        <h1 id="contact-heading">Contact Me</h1>
+        <p>Feel free to reach out to me at <a href="mailto:whysafalisop@gmail.com">whysafalisop@gmail.com</a>.</p>
+        <div class="social-links">
+          <a href="#">LinkedIn</a> | <a href="#">Twitter</a> | <a href="https://github.com/happilli">GitHub</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="left">
+      <nav aria-label="Footer Navigation">
         <ul>
-          <li><a href="#" onclick="showSection('about')">About</a></li>
-          <li><a href="#" onclick="showSection('portfolio')">Portfolio</a></li>
-          <li><a href="#" onclick="showSection('skills')">Skills</a></li>
-          <li><a href="#" onclick="showSection('contact')">Contact</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
         </ul>
       </nav>
-    </header>
-
-    <div class="parallax">
-      <section id="about" class="content slide-in active">
-        <div>
-          <h1>About Me</h1>
-          <p>
-            Welcome to my portfolio! I am Safa Lama, a passionate web developer.
-          </p>
-          <!-- Add more details about yourself here -->
-        </div>
-      </section>
-
-      <section id="portfolio" class="content slide-in">
-        <div>
-          <h1>Portfolio</h1>
-          <!-- Gallery Slider -->
-          <div class="gallery">
-            <div class="gallery-item">
-              <a href="https://github.com/RyuZinOh/KPS-System">
-                <img
-                  src="https://media.discordapp.net/attachments/1258640528149581935/1258643630353158235/KPS_system.jpg?ex=6688cab9&is=66877939&hm=bf8accf1fe5c7ee462cd139348e4ec79bace3dcd48fb6182e7afaf4494eb7f58&=&format=webp&width=449&height=449"
-                  alt="KPS system logo"
-                />
-                <div class="C Project">
-                  <h2>KPS-system</h2>
-                  <p>BCA 2nd semester group project</p>
-                </div>
-              </a>
-            </div>
-            <div class="gallery-item">
-              <a href="https://github.com/Happilli/Expertise">
-                <img
-                  src="https://media.discordapp.net/attachments/1258640528149581935/1258644379833339934/expertise.jpg?ex=6688cb6c&is=668779ec&hm=dd4c0c476f481c2bb9adf3ec71b976f0a887ba034188f47e6755f03243193eb3&=&format=webp&width=449&height=449"
-                  alt="Expertise logo"
-                />
-                <div class="Python Project">
-                  <h2>Expertise</h2>
-                  <p>Discord bot which manages poketwo bot system [offline]</p>
-                </div>
-              </a>
-            </div>
-            <!-- Add more gallery items as needed -->
-          </div>
-          <!-- End Gallery Slider -->
-        </div>
-      </section>
-
-      <section id="skills" class="content slide-in">
-        <div>
-          <h1>Skills</h1>
-          <!-- List your skills here -->
-          <ul>
-            <li>HTML5</li>
-            <li>CSS3</li>
-            <li>JavaScript</li>
-            <!-- Add more skills -->
-          </ul>
-        </div>
-      </section>
-
-      <section id="contact" class="content slide-in">
-        <div>
-          <h1>Contact Me</h1>
-          <!-- Contact form or contact information -->
-          <p>
-            Feel free to reach out to me at
-            <a href="mailto:your-email@example.com">whysafalisop@gmail.com</a>.
-          </p>
-          <!-- Add social media links -->
-          <div class="social-links">
-            <a href="#">LinkedIn</a> | <a href="#">Twitter</a> |
-            <a href="https://github.com/happilli">GitHub</a>
-          </div>
-        </div>
-      </section>
     </div>
+    <div class="center">
+      <img src="assets/tab.png" alt="Tab Icon">
+    </div>
+    <div class="right">
+      <p>&copy; 2024 Safa Lama. All rights reserved.</p>
+    </div>
+  </footer>
 
-    <footer>
-      <div class="left">
-        <nav>
-          <ul>
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Terms of Service</a></li>
-          </ul>
-        </nav>
-      </div>
-      <div class="center">
-        <img src="assets/tab.png" alt="Tab Icon" />
-      </div>
-      <div class="right">
-        <p>&copy; 2024 Safa Lama. All rights reserved.</p>
-      </div>
-    </footer>
-
-    <script src="js/main.js"></script>
-  </body>
+  <script src="js/main.js"></script>
+  <script src="js/loader.js"></script>
+</body>
 </html>
