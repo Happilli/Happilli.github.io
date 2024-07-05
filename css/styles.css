@@ -162,14 +162,28 @@ footer {
     justify-content: space-between; /* Distribute items evenly across the footer */
     align-items: center; /* Center items vertically */
     padding: 1rem 2rem;
+    height: 100px; /* Adjust height as needed */
 }
 
 .left,
 .center,
 .right {
-    flex: 1; /* Equal width distribution */
     display: flex;
+    justify-content: center; /* Center items horizontally */
     align-items: center; /* Center items vertically */
+    margin-bottom: 1rem; /* Add spacing between sections */
+}
+
+.left {
+    order: 1; /* Ensure left is first in vertical layout */
+}
+
+.center {
+    order: 2; /* Ensure center is second in vertical layout */
+}
+
+.right {
+    order: 3; /* Ensure right is third in vertical layout */
 }
 
 .left nav ul {
@@ -196,7 +210,9 @@ footer {
 
 .center {
     display: flex;
-    justify-content: center; /* Center horizontally */
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    margin-bottom: 1rem; /* Add spacing between sections */
 }
 
 .center img {
@@ -205,8 +221,9 @@ footer {
 
 .right {
     display: flex;
-    justify-content: flex-end; /* Align content to the right */
+    justify-content: center; /* Center items horizontally */
     align-items: center; /* Center items vertically */
+    margin-bottom: 1rem; /* Add spacing between sections */
 }
 
 .right p {
@@ -214,3 +231,97 @@ footer {
     font-size: 0.9rem;
 }
 
+/* Media Queries for Responsive Design */
+
+/* Small screens (phones) */
+@media only screen and (max-width: 600px) {
+    .content {
+        padding: 3rem 1.5rem;
+    }
+
+    .content h1 {
+        font-size: 2.5rem;
+    }
+
+    .content p {
+        font-size: 0.9rem; /* Decreased font size for paragraphs */
+    }
+
+    .gallery-item {
+        min-width: 250px;
+    }
+
+    .center img {
+        height: 25px;
+    }
+
+    header,
+    footer {
+        padding: 0.5rem 0; /* Adjusted padding for header and footer */
+    }
+
+    nav ul li a {
+        font-size: 0.8rem; /* Smaller font size for nav links */
+        padding: 0.3rem 0.5rem; /* Adjusted padding for nav links */
+    }
+
+    .right p {
+        font-size: 0.7rem; /* Smaller font size for footer text */
+    }
+
+    footer {
+        flex-direction: column; /* Arrange items vertically */
+        justify-content: space-between; /* Space evenly between items */
+        height: auto; /* Auto height for content */
+    }
+
+    .left {
+        order: 1; /* Ensure left is first in vertical layout */
+    }
+
+    .center {
+        order: 2; /* Ensure center is second in vertical layout */
+    }
+
+    .right {
+        order: 3; /* Ensure right is third in vertical layout */
+    }
+}
+
+/* Medium screens (tablets) */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .content {
+        padding: 3.5rem 2rem;
+    }
+
+    .content h1 {
+        font-size: 2.8rem;
+    }
+
+    .content p {
+        font-size: 1.1rem;
+    }
+
+    .gallery-item {
+        min-width: 280px;
+    }
+
+    .center img {
+        height: 28px;
+    }
+}
+
+/* Large screens (desktops) */
+@media only screen and (min-width: 1025px) {
+    .content {
+        padding: 4rem 2rem;
+    }
+
+    .gallery-item {
+        min-width: 300px;
+    }
+
+    .center img {
+        height: 30px;
+    }
+}
