@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safa Lama - Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="assets/tab.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="showSection('about')">About</a></li>
+                <li><a href="#" onclick="showSection('portfolio')">Portfolio</a></li>
+                <li><a href="#" onclick="showSection('skills')">Skills</a></li>
+                <li><a href="#" onclick="showSection('contact')">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="parallax">
+        <section id="about" class="content slide-in active">
+            <div>
+                <h1>About Me</h1>
+                <p>Welcome to my portfolio! I am Safa Lama, a passionate web developer.</p>
+                <!-- Add more details about yourself here -->
+            </div>
+        </section>
+
+        <section id="portfolio" class="content slide-in">
+            <div>
+                <h1>Portfolio</h1>
+                <!-- Gallery Slider -->
+                <div class="gallery">
+                    <div class="gallery-item">
+                        <img src="path_to_your_image.jpg" alt="Project Image">
+                        <div class="project-details">
+                            <h2>Project Title</h2>
+                            <p>Description of the project.</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="path_to_your_image.jpg" alt="Project Image">
+                        <div class="project-details">
+                            <h2>Project Title</h2>
+                            <p>Description of the project.</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="path_to_your_image.jpg" alt="Project Image">
+                        <div class="project-details">
+                            <h2>Project Title</h2>
+                            <p>Description of the project.</p>
+                        </div>
+                    </div>
+                    <!-- Add more gallery items as needed -->
+                </div>
+                <!-- End Gallery Slider -->
+            </div>
+        </section>
+
+        <section id="skills" class="content slide-in">
+            <div>
+                <h1>Skills</h1>
+                <!-- List your skills here -->
+                <ul>
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>JavaScript</li>
+                    <!-- Add more skills -->
+                </ul>
+            </div>
+        </section>
+
+        <section id="contact" class="content slide-in">
+            <div>
+                <h1>Contact Me</h1>
+                <!-- Contact form or contact information -->
+                <p>Feel free to reach out to me at <a href="mailto:your-email@example.com">your-email@example.com</a>.</p>
+                <!-- Add social media links -->
+                <div class="social-links">
+                    <a href="#">LinkedIn</a> | <a href="#">Twitter</a> | <a href="#">GitHub</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+      <div class="left">
+          <nav>
+              <ul>
+                  <li><a href="#">Privacy Policy</a></li>
+                  <li><a href="#">Terms of Service</a></li>
+              </ul>
+          </nav>
+      </div>
+      <div class="center">
+          <img src="assets/tab.png" alt="Tab Icon">
+      </div>
+      <div class="right">
+          <p>&copy; 2024 Safa Lama. All rights reserved.</p>
+      </div>
+  </footer>
+  
+
+    <script src="js/main.js"></script>
+</body>
+</html>

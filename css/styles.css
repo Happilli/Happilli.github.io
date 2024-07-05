@@ -1,0 +1,199 @@
+/* Reset default styles and set base styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Global styles */
+body {
+    overflow-x: hidden;
+    background-color: #f0f0f0; /* Light background color */
+    color: #333; /* Dark text color */
+    line-height: 1.6;
+}
+
+/* Header and footer styles */
+header, footer {
+    background-color: #333; /* Dark background color */
+    padding: 1rem 0;
+    text-align: center;
+    color: #fff; /* White text color */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+nav ul li a {
+    color: #fff; /* White text color */
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #555; /* Darker background color on hover */
+    border-radius: 5px;
+}
+
+/* Parallax section */
+.parallax {
+    background-image: url('../assets/backgroundX.jpeg');
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow: hidden; /* Ensure content doesn't overflow */
+}
+
+/* Content sections */
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 4rem 2rem;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Shadow for the content */
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    z-index: 1; /* Ensure content is above the background */
+    display: none; /* Hide all content sections initially */
+    width: calc(100% - 4rem); /* Adjust width for better visibility */
+    max-width: 800px; /* Max width to limit size */
+}
+
+.content.active {
+    display: block; /* Show active content section */
+    z-index: 2; /* Increase z-index to overlay */
+}
+
+.content h1 {
+    font-weight: 600;
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    color: #333; /* Dark text color */
+}
+
+.content p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Gallery Slider */
+.gallery {
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    padding: 1rem 0;
+}
+
+.gallery-item {
+    flex: 0 0 auto;
+    width: 80%;
+    min-width: 300px;
+    margin-right: 1rem;
+    scroll-snap-align: start;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.project-details {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 1rem;
+    border-radius: 10px;
+    text-align: center;
+    display: none;
+}
+
+.gallery-item:hover .project-details {
+    display: block;
+}
+
+/* Footer specific styles */
+footer {
+    display: flex;
+    justify-content: space-between; /* Distribute items evenly across the footer */
+    align-items: center; /* Center items vertically */
+    padding: 1rem 2rem;
+}
+
+.left,
+.center,
+.right {
+    flex: 1; /* Equal width distribution */
+    display: flex;
+    align-items: center; /* Center items vertically */
+}
+
+.left nav ul {
+    list-style: none; /* Remove default list styles */
+    padding: 0; /* Remove default padding */
+    display: flex;
+}
+
+.left nav ul li {
+    margin-right: 1rem;
+}
+
+.left nav ul li a {
+    color: #fff; /* White text color */
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.left nav ul li a:hover {
+    background-color: #555; /* Darker background color on hover */
+    border-radius: 5px;
+}
+
+.center {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+}
+
+.center img {
+    height: 20px; /* Adjust height as needed */
+}
+
+.right {
+    display: flex;
+    justify-content: flex-end; /* Align content to the right */
+    align-items: center; /* Center items vertically */
+}
+
+.right p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
