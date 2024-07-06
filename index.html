@@ -27,8 +27,8 @@
   <main class="parallax">
     <section id="about" class="content slide-in active" role="region" aria-labelledby="about-heading">
       <div class="about-content">
-        <h1 id="about-heading">About Me</h1>
-        <p>Welcome to my portfolio! I am Safa Lama, a passionate web developer.</p>
+        <h1>About Me</h1>
+        <p id="typed-text"></p>
       </div>
     </section>
 
@@ -38,7 +38,7 @@
         <div class="gallery">
           <div class="gallery-item">
             <a href="https://github.com/RyuZinOh/KPS-System">
-              <img src="https://media.discordapp.net/attachments/1258640528149581935/1258643630353158235/KPS_system.jpg?ex=6688cab9&is=66877939&hm=bf8accf1fe5c7ee462cd139348e4ec79bace3dcd48fb6182e7afaf4494eb7f58&=&format=webp&width=449&height=449" alt="KPS system logo">
+              <img src="assets/KPS.jpg" alt="KPS system logo">
               <div class="project-details">
                 <h2>KPS-system</h2>
                 <p>BCA 2nd semester group project</p>
@@ -47,7 +47,7 @@
           </div>
           <div class="gallery-item">
             <a href="https://github.com/Happilli/Expertise">
-              <img src="https://media.discordapp.net/attachments/1258640528149581935/1258644379833339934/expertise.jpg?ex=6688cb6c&is=668779ec&hm=dd4c0c476f481c2bb9adf3ec71b976f0a887ba034188f47e6755f03243193eb3&=&format=webp&width=449&height=449" alt="Expertise logo">
+              <img src="assets/expertise.jpg" alt="Expertise logo">
               <div class="project-details">
                 <h2>Expertise</h2>
                 <p>Discord bot which manages poketwo bot system [offline]</p>
@@ -150,5 +150,18 @@
 
   <script src="js/main.js"></script>
   <script src="js/loader.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const options = {
+        strings: ["Welcome to my portfolio. I am Safa Lama, a passionate web developer."],
+        typeSpeed: 50,
+        backSpeed: 25,
+        loop: true,
+        showCursor: false
+    };
+    const typed = new Typed('#typed-text', options);
+});
+</script>
 </body>
 </html>
