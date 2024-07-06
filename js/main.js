@@ -1,46 +1,78 @@
 document.addEventListener('DOMContentLoaded', function() {
     const navUl = document.querySelector('nav ul');
+    const sections = document.querySelectorAll('.content');
     const parallaxElement = document.querySelector('.parallax');
     const dateAndTimeOverlay = createDateTimeOverlay();
     const observer = new IntersectionObserver(animateSkillBars, { threshold: 0.5 });
+    let currentSectionIndex = 0;
 
-    navUl.addEventListener('click', function(event) {
+    // Add event listener for hover on nav links to switch sections
+    navUl.addEventListener('mouseover', function(event) {
         if (event.target.tagName === 'A') {
-            event.preventDefault();
             const sectionId = event.target.getAttribute('data-section');
-            showSection(sectionId);
+            const targetIndex = Array.from(navUl.children).findIndex(item => item.firstElementChild.getAttribute('data-section') === sectionId);
+            showSection(targetIndex);
         }
     });
+
+    // Event listener for touch swipe on nav to switch sections
+    let touchstartX = 0;
+    let touchendX = 0;
+    navUl.addEventListener('touchstart', function(event) {
+        touchstartX = event.changedTouches[0].screenX;
+    });
+
+    navUl.addEventListener('touchend', function(event) {
+        touchendX = event.changedTouches[0].screenX;
+        handleSwipe();
+    });
+
+    function handleSwipe() {
+        if (touchendX < touchstartX) {
+            // Swiped left
+            showSection(currentSectionIndex + 1);
+        }
+
+        if (touchendX > touchstartX) {
+            // Swiped right
+            showSection(currentSectionIndex - 1);
+        }
+    }
 
     updateDateTime();
     setInterval(updateDateTime, 1000);
 
     observer.observe(document.getElementById('skills'));
 
-    function showSection(sectionId) {
-        const sections = document.querySelectorAll('.content');
-        sections.forEach(section => section.classList.remove('active'));
+    function showSection(index) {
+        const lastIndex = sections.length - 1;
 
-        const activeSection = document.getElementById(sectionId);
-        if (activeSection) {
-            activeSection.classList.add('active');
-            updateParallaxBackground(sectionId);
-        } else {
-            updateParallaxBackground('default');
-            updateDateTime();
+        if (index < 0) {
+            index = 0;
+        } else if (index > lastIndex) {
+            index = lastIndex;
         }
 
-        dateAndTimeOverlay.classList.toggle('translucent', ['portfolio', 'skills', 'contact'].includes(sectionId));
+        const currentSection = sections[currentSectionIndex];
+        const targetSection = sections[index];
+
+        currentSection.style.display = 'none';
+        targetSection.style.display = 'block';
+
+        updateParallaxBackground(index);
+
+        currentSectionIndex = index;
+        dateAndTimeOverlay.classList.toggle('translucent', ['portfolio', 'skills', 'contact'].includes(targetSection.getAttribute('id')));
     }
 
-    function updateParallaxBackground(sectionId) {
+    function updateParallaxBackground(index) {
         const backgrounds = {
-            'portfolio': '../assets/background_x4.jpeg',
-            'skills': '../assets/backgroundX2.jpeg',
-            'contact': '../assets/background_x2.jpeg',
-            'default': '../assets/backgroundX.jpeg'
+            0: '../assets/backgroundX.jpeg',
+            1: '../assets/background_x4.jpeg',
+            2: '../assets/backgroundX2.jpeg',
+            3: '../assets/background_x2.jpeg'
         };
-        parallaxElement.style.backgroundImage = `url('${backgrounds[sectionId] || backgrounds['default']}')`;
+        parallaxElement.style.backgroundImage = `url('${backgrounds[index] || backgrounds[0]}')`;
     }
 
     function createDateTimeOverlay() {
