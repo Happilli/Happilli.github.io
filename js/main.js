@@ -4,6 +4,9 @@ document.addEventListener('DOMContentLoaded', function() {
     const parallaxElement = document.querySelector('.parallax');
     const dateAndTimeOverlay = createDateTimeOverlay();
     const observer = new IntersectionObserver(animateSkillBars, { threshold: 0.5 });
+    const header = document.querySelector('header');
+    const footer = document.querySelector('footer');
+
     let currentSectionIndex = 0;
 
     // Add event listener for hover on nav links to switch sections
@@ -46,35 +49,45 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function showSection(index) {
         const lastIndex = sections.length - 1;
-
+    
         if (index < 0) {
             index = 0;
         } else if (index > lastIndex) {
             index = lastIndex;
         }
-
+    
         const currentSection = sections[currentSectionIndex];
         const targetSection = sections[index];
-
+    
         currentSection.style.display = 'none';
         targetSection.style.display = 'block';
-
-        updateParallaxBackground(index);
-
+    
+        updateBackgrounds(index);
+    
         currentSectionIndex = index;
         dateAndTimeOverlay.classList.toggle('translucent', ['portfolio', 'skills', 'contact'].includes(targetSection.getAttribute('id')));
     }
+    
 
-    function updateParallaxBackground(index) {
+    function updateBackgrounds(index) {
         const backgrounds = {
             0: '../assets/backgroundX.jpeg',
             1: '../assets/background_x4.jpeg',
             2: '../assets/backgroundX2.jpeg',
             3: '../assets/background_x2.jpeg'
         };
-        parallaxElement.style.backgroundImage = `url('${backgrounds[index] || backgrounds[0]}')`;
+        const backgroundUrl = backgrounds[index] || backgrounds[0];
+    
+        // Update parallax background
+        parallaxElement.style.backgroundImage = `url('${backgroundUrl}')`;
+    
+        // Update header and footer backgrounds
+        const gradientOverlay = 'linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7))';
+        header.style.background = `${gradientOverlay}, url('${backgroundUrl}')`;
+        footer.style.background = `${gradientOverlay}, url('${backgroundUrl}')`;
     }
-
+    
+    
     function createDateTimeOverlay() {
         const dateAndTimeOverlay = document.createElement('div');
         dateAndTimeOverlay.className = 'date-time-overlay';
@@ -115,3 +128,5 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 });
+
+
