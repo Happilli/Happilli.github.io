@@ -80,11 +80,21 @@ document.addEventListener('DOMContentLoaded', function() {
     
         // Update parallax background
         parallaxElement.style.backgroundImage = `url('${backgroundUrl}')`;
+        parallaxElement.style.backgroundSize = 'cover';
+        parallaxElement.style.backgroundPosition = 'center';
+        parallaxElement.style.padding = '1rem 0';
     
         // Update header and footer backgrounds
         const gradientOverlay = 'linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7))';
         header.style.background = `${gradientOverlay}, url('${backgroundUrl}')`;
+        header.style.backgroundSize = 'cover';
+        header.style.backgroundPosition = 'center';
+        header.style.padding = '1rem 0';
+        
         footer.style.background = `${gradientOverlay}, url('${backgroundUrl}')`;
+        footer.style.backgroundSize = 'cover';
+        footer.style.backgroundPosition = 'center';
+        footer.style.padding = '1rem 0';
     }
     
     
