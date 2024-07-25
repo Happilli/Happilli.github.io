@@ -44,3 +44,5 @@ function updateDateTime() {
     document.getElementById('current-date').textContent = formattedDate;
     document.getElementById('current-time').textContent = formattedTime;
 }
+
+
