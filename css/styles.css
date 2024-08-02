@@ -267,43 +267,58 @@ nav ul li a:hover::after {
     transition: width 1s ease;
 }
 
+
 .skill-level.html {
-    background-color: #f16529; 
+    background: linear-gradient(135deg, #f16529, #f8b400);
 }
 
 .skill-level.css {
-    background-color: #2965f1; 
+    background: linear-gradient(135deg, #2965f1, #3b82f6);
 }
 
 .skill-level.js {
-    background-color: #f0db4f; 
+    background: linear-gradient(135deg, #f0db4f, #f7e54c);
 }
 
 .skill-level.python {
-    background-color: #4b8bbe; 
+    background: linear-gradient(135deg, #4b8bbe, #6ab7e1);
 }
 
 .skill-level.c {
-    background-color: #5c6bc0; 
+    background: linear-gradient(135deg, #5c6bc0, #8a9bd9);
 }
 
 .skill-level.cpp {
-    background-color: #649ad2; 
+    background: linear-gradient(135deg, #649ad2, #7fb8e4);
 }
 
 .skill-level.vb {
-    background-color: #563d7c; 
+    background: linear-gradient(135deg, #563d7c, #6e48aa);
 }
 
 .skill-level.dbms {
-    background-color: #5e7a7b; 
+    background: linear-gradient(135deg, #5e7a7b, #7f9a9a);
 }
 
 .skill-level.typing {
-    background-color: #4caf50; 
+    background: linear-gradient(135deg, #4caf50, #66bb6a);
 }
 
+.skill-level.nextjs {
+    background: linear-gradient(135deg, #000000, #434343);
+}
 
+.skill-level.reactjs {
+    background: linear-gradient(135deg, #61DAFB, #4c9fd4);
+}
+
+.skill-level.bootstrap {
+    background: linear-gradient(135deg, #563D7C, #6d2c77);
+}
+
+.skill-level.firebase {
+    background: linear-gradient(135deg, #FFCA28, #f5d18c);
+}
 
 
 footer {
