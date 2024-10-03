@@ -1,0 +1,145 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: "Poppins", sans-serif; /* Use Poppins font */
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px 20px;
+  z-index: 1000;
+}
+
+.logo img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%; /* Circular logo */
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar li {
+  margin: 0 30px; /* Increased horizontal spacing between links */
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover,
+.navbar a.active {
+  color: #ffa500; /* Change color on hover and active */
+}
+
+main {
+  flex: 1;
+  padding-top: 60px; /* Space for fixed header */
+}
+
+section {
+  padding: 80px 20px; /* Increased padding for sections */
+  margin: 40px 0; /* Space between sections */
+  height: 100vh; /* Set height to full viewport for better scrolling */
+  display: flex;
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  flex-direction: column; /* Stack content vertically */
+}
+
+.typed-container {
+  font-size: xx-large;
+  font-weight: bold;
+  text-align: center; /* Center the typed text */
+  margin-top: 20px; /* Space above the typing effect */
+}
+
+.circular-image {
+  width: 450px; /* Set width for the circular image */
+  height: 450px; /* Set height for the circular image */
+  border-radius: 50%; /* Make the image circular */
+  border: 5px solid #ffa500; /* Optional: Add a border around the image */
+  object-fit: cover; /* Ensure the image covers the circle */
+  margin-top: 20px; /* Space above the image */
+}
+
+footer {
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-content {
+  margin-bottom: 10px;
+}
+
+.social-links {
+  list-style-type: none;
+  padding: 0;
+}
+
+.social-links li {
+  display: inline;
+  margin: 0 15px;
+}
+
+.social-links a {
+  color: white;
+  font-size: 24px; /* Size of the icons */
+  text-decoration: none;
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.social-links a:hover {
+  color: #ffa500; /* Change color on hover */
+}
+
+.footer-bottom {
+  font-size: 14px;
+}
+
+@keyframes jiggle {
+  /* Define jiggle animation */
+  0% {
+    transform: translate(0);
+  }
+  25% {
+    transform: translate(-2px, 2px);
+  }
+  50% {
+    transform: translate(2px, -2px);
+  }
+  75% {
+    transform: translate(-2px, -2px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+
+.jiggle {
+  animation: jiggle 0.5s; /* Apply jiggle animation */
+}

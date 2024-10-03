@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="{{ '/assets/styles.css' | relative_url }}" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img
+          src="{{ '/assets/safallama.jpg' | relative_url }}"
+          alt="Safal Lama"
+        />
+      </div>
+      <nav class="navbar">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home">
+        <div class="typed-container">
+          <div class="typing-effect"></div>
+          <img
+            src="{{ '/assets/safallama.jpg' | relative_url }}"
+            alt="Safal Lama"
+            class="circular-image"
+          />
+        </div>
+      </section>
+
+      {{ content }}
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <h3>Connect with Me</h3>
+        <ul class="social-links">
+          <li>
+            <a href="https://github.com/yourusername" target="_blank"
+              ><i class="fab fa-github"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/yourusername/" target="_blank"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://twitter.com/yourusername" target="_blank"
+              ><i class="fab fa-twitter"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/yourusername/" target="_blank"
+              ><i class="fab fa-instagram"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/yourusername" target="_blank"
+              ><i class="fab fa-facebook"></i
+            ></a>
+          </li>
+          <li>
+            <a href="mailto:whysafalisop@gmail.com"
+              ><i class="fas fa-envelope"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-bottom"></div>
+    </footer>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const navbarLinks = document.querySelectorAll(".navbar a");
+        const navbar = document.querySelector("header");
+
+        // Custom smooth scroll function
+        function smoothScroll(target, duration) {
+          const targetSection = document.querySelector(target);
+          const targetPosition =
+            targetSection.getBoundingClientRect().top + window.scrollY;
+          const startPosition = window.scrollY;
+          const distance = targetPosition - startPosition;
+          let startTime = null;
+
+          function animation(currentTime) {
+            if (startTime === null) startTime = currentTime;
+            const timeElapsed = currentTime - startTime;
+            const progress = Math.min(timeElapsed / duration, 1); // Ensure progress doesn't exceed 1
+
+            // Ease-in-out effect
+            const ease = (progress) => {
+              return progress < 0.5
+                ? 4 * progress * progress * progress
+                : (progress - 1) * (progress - 1) * (progress - 1) + 1;
+            };
+
+            window.scrollTo(0, startPosition + distance * ease(progress));
+
+            if (progress < 1) requestAnimationFrame(animation);
+          }
+
+          requestAnimationFrame(animation);
+        }
+
+        // Smooth scroll on link click with jiggly effect
+        navbarLinks.forEach((link) => {
+          link.addEventListener("click", function (e) {
+            e.preventDefault();
+            const targetId = this.getAttribute("href");
+
+            // Add jiggle class
+            navbar.classList.add("jiggle");
+            setTimeout(() => {
+              navbar.classList.remove("jiggle");
+            }, 500); // Remove jiggle class after animation
+
+            smoothScroll(targetId, 1000); // Adjust duration as needed (1000 ms)
+          });
+        });
+
+        // Highlight active link on scroll
+        window.addEventListener("scroll", () => {
+          const sections = document.querySelectorAll("section");
+          const scrollPos = window.scrollY + 100; // Offset for active highlight
+
+          sections.forEach((section) => {
+            if (
+              section.offsetTop <= scrollPos &&
+              section.offsetTop + section.offsetHeight > scrollPos
+            ) {
+              navbarLinks.forEach((link) => {
+                link.classList.remove("active");
+                if (link.getAttribute("href") === `#${section.id}`) {
+                  link.classList.add("active");
+                }
+              });
+            }
+          });
+        });
+
+        // Initialize Typed.js
+        const options = {
+          strings: [
+            "sinister spectre of icy abyss lurking through the shadows of frozen void",
+          ],
+          typeSpeed: 50, // Typing speed in milliseconds
+          backSpeed: 25, // Backspacing speed in milliseconds
+          loop: true, // Loop indefinitely
+          showCursor: false, // Remove the blinking cursor
+        };
+
+        const typed = new Typed(".typing-effect", options);
+      });
+    </script>
+
+    <script src="{{ '/assets/script.js' | relative_url }}"></script>
+  </body>
+</html>
