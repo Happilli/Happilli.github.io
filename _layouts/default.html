@@ -105,7 +105,7 @@
           function animation(currentTime) {
             if (startTime === null) startTime = currentTime;
             const timeElapsed = currentTime - startTime;
-            const progress = Math.min(timeElapsed / duration, 1); // Ensure progress doesn't exceed 1
+            const progress = Math.min(timeElapsed / duration, 1);
 
             // Ease-in-out effect
             const ease = (progress) => {
@@ -132,16 +132,16 @@
             navbar.classList.add("jiggle");
             setTimeout(() => {
               navbar.classList.remove("jiggle");
-            }, 500); // Remove jiggle class after animation
+            }, 500);
 
-            smoothScroll(targetId, 1000); // Adjust duration as needed (1000 ms)
+            smoothScroll(targetId, 1000);
           });
         });
 
         // Highlight active link on scroll
         window.addEventListener("scroll", () => {
           const sections = document.querySelectorAll("section");
-          const scrollPos = window.scrollY + 100; // Offset for active highlight
+          const scrollPos = window.scrollY + 100;
 
           sections.forEach((section) => {
             if (
@@ -163,10 +163,10 @@
           strings: [
             "sinister spectre of icy abyss lurking through the shadows of frozen void",
           ],
-          typeSpeed: 50, // Typing speed in milliseconds
-          backSpeed: 25, // Backspacing speed in milliseconds
-          loop: true, // Loop indefinitely
-          showCursor: false, // Remove the blinking cursor
+          typeSpeed: 50,
+          backSpeed: 25,
+          loop: true,
+          showCursor: false,
         };
 
         const typed = new Typed(".typing-effect", options);
