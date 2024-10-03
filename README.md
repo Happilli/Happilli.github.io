@@ -1,3 +1,5 @@
+
+```
 website/
 ├── config.yml
 ├── \_posts/
@@ -9,4 +11,5 @@ website/
 ├── Gemfile.lock
 ├── index.markdown
 ├── projects.markdown 
-└── about.markdown 
+└── about.markdown
+```
