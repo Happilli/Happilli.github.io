@@ -1,0 +1,146 @@
+:root {
+  --gap: 30px; /* Adjust for spacing */
+  --primary-color: #ffa500; /* Main color */
+  --hover-color: #ff8c00; /* Hover color */
+  --text-color: #333; /* Main text color */
+  --subtext-color: #666; /* Subtext color */
+  --shadow-color: rgba(0, 0, 0, 0.1); /* Box shadow color */
+}
+
+.timeline {
+  position: relative;
+  margin: 20px 0;
+  padding-left: 20px;
+}
+
+.timeline-item {
+  position: relative;
+  border-left: 3px solid var(--primary-color);
+  padding-left: 25px;
+  margin: 40px 0;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.5s forwards;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 3px 6px var(--shadow-color);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.timeline-item h2 {
+  margin-top: 0;
+  font-size: 1.75em;
+  color: var(--text-color);
+  font-weight: bold;
+}
+
+.timeline-item p {
+  font-size: 1.1em;
+  color: var(--subtext-color);
+  margin-top: 10px;
+}
+
+.project-image {
+  width: 69%;
+  height: auto;
+  margin: 15px 0;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.project-link {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1.1em;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.project-link:hover {
+  background-color: var(--hover-color);
+  transform: scale(1.05);
+}
+
+.favicon {
+  width: 24px;
+  height: 24px;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+.moving-dot {
+  position: absolute;
+  left: -8px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease;
+}
+
+.timeline-item:hover {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+}
+
+#home h1 {
+  font-size: 3em;
+  font-weight: bold;
+  color: var(--text-color);
+  text-align: center;
+  margin-top: 50px;
+  letter-spacing: 2px;
+}
+
+.project-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.hover-image {
+  position: absolute;
+  width: 350px;
+  height: 200px;
+  border-radius: 8px;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+.hover-image-1 {
+  top: calc(-220px - var(--gap));
+  left: calc(var(--gap) * 1);
+  transform: translateY(20px);
+}
+
+.hover-image-2 {
+  top: calc(var(--gap) * 1);
+  right: calc(-360px - var(--gap));
+  transform: translateX(-20px);
+}
+
+.hover-image-3 {
+  bottom: calc(-170px - var(--gap));
+  left: calc(var(--gap) * 1);
+  transform: translateY(-20px);
+}
+
+.hover-image-4 {
+  top: calc(var(--gap) * 1);
+  left: calc(-420px - var(--gap));
+  transform: translateX(20px);
+}
+
+.project-wrapper:hover .hover-image {
+  opacity: 1;
+  transform: translate(0);
+}
+
+.project-wrapper:hover .project-image {
+  transform: scale(1.05);
+}

@@ -4,12 +4,6 @@ title: Home
 ---
 
 <div class="typing-effect"></div>
-
-<section id="home">
-    <h1>Home</h1>
-    <p>Your home content goes here.</p>
-</section>
-
 <section id="about">
     <h1>About</h1>
     <p>Your about content goes here.</p>
@@ -17,7 +11,10 @@ title: Home
 
 <section id="projects">
     <h1>Projects</h1>
-    <p>Your projects content goes here.</p>
+    <!-- {% capture projects_content %} -->
+      {% include_relative projects.markdown %}
+    {% endcapture %}
+    {{ projects_content | markdownify }}
 </section>
 
 <section id="gallery">

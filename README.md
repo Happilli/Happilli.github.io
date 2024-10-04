@@ -6,6 +6,8 @@ website/
 │   └── default.html
 ├── assets/
 │   ├── styles.css
+│   ├── projects.css
+│   ├── projects.js
 │   ├── Noble_Auction.png
 │   └── safallama.jpg
 │   └── script.js
