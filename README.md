@@ -15,6 +15,8 @@ website/
 │   ├── Noble_Auction.png
 │   └── safallama.jpg
 │   └── script.js
+│   └── timeline.js
+│   └── timeline.css
 ├── .gitignore
 ├── 404.html
 ├── Gemfile

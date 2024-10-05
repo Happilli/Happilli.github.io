@@ -15,6 +15,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 .skills-item {
@@ -22,12 +23,15 @@ body {
   border-radius: 12px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
   margin: 10px;
-  flex: 1 1 calc(45% - 20px);
+  flex: 1 1 calc(30% - 20px);
   min-width: 250px;
   padding: 20px;
-  padding-right: 40px;
   transition: transform 0.3s, box-shadow 0.3s;
   position: relative;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .skills-item::after {
@@ -57,6 +61,7 @@ body {
 .skills-list {
   list-style-type: none;
   padding: 0;
+  flex-grow: 1;
 }
 
 .skills-list li {
@@ -88,14 +93,85 @@ body {
 }
 
 @media (max-width: 768px) {
+  body {
+    background-color: white;
+    background: none;
+  }
   .skills-timeline {
-    flex-direction: column;
+    flex-direction: revert;
     align-items: center;
+  }
+
+  .typed-container {
+    font-size: 20px;
+    font-weight: lighter;
+    text-align: center;
+    font-family: poppins;
+    margin-top: 20px;
+  }
+
+  nav {
+    display: flex;
+    unicode-bidi: isolate;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+  .circular-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 5px solid #ffa500;
+    object-fit: cover;
+    margin-top: 20px;
+  }
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .navbar li {
+    font-size: smaller;
+    margin: 0;
+    padding: 10px;
+  }
+  .navbar ul {
+    list-style: auto;
+    display: inline-flex;
+    padding: 0;
+    margin: auto;
+    font-size: small;
+  }
+
+  .logo img {
+    display: none;
   }
 
   .skills-item {
     flex: 1 1 100%;
     max-width: 100%;
+    height: auto;
+    margin: 10px 0;
+  }
+
+  .skills-item h2 {
+    font-size: 1.3em;
+  }
+
+  .skills-list li {
+    font-size: 0.9em;
+  }
+  .skills-timeline {
+    width: 90%; /* Adjusts based on screen size */
+    max-width: 500px; /* Keeps a limit for larger screens */
+    margin: 20px auto;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    overflow-x: hidden;
+    background-color: #333;
   }
 }
 
@@ -105,6 +181,6 @@ body {
   }
 
   .skills-list li {
-    font-size: 0.9em;
+    font-size: 0.8em;
   }
 }
