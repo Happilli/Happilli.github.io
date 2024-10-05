@@ -28,14 +28,3 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
-
-
-const hoverImages = document.querySelectorAll('.hover-image');
-
-hoverImages.forEach(image => {
-  image.addEventListener('click', function() {
-    const imgSrc = this.src;
-    const imgWindow = window.open(imgSrc, '_blank');
-    imgWindow.focus();
-  });
-});

@@ -23,8 +23,11 @@ title: Home
 </section>
 
 <section id="portfolio">
-    <h1>Portfolio</h1>
-    <p>Your portfolio content goes here.</p>
+  <h1>My Portfolio and interets</h1>
+    <!-- {% capture portfolio_content %} -->
+      {% include_relative portfolio.markdown %}
+    {% endcapture %}
+    {{ portfolio_content | markdownify }}
 </section>
 
 <section id="contact">
