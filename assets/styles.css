@@ -21,7 +21,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.8);
   padding: 10px 20px;
   z-index: 1000;
 }
@@ -86,7 +86,7 @@ section {
 }
 
 footer {
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(0, 0, 0, 0.8);
   color: white;
   padding: 20px 0;
   text-align: center;
@@ -143,4 +143,3 @@ footer {
 .jiggle {
   animation: jiggle 0.5s;
 }
-

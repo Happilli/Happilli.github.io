@@ -30,7 +30,6 @@ title: Home
     {{ portfolio_content | markdownify }}
 </section>
 
-<section id="contact">
-    <h1>Contact</h1>
-    <p>Your contact content goes here.</p>
+<section id="timeline">
+
 </section>

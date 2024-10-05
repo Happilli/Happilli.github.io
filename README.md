@@ -22,7 +22,7 @@ website/
 ├── index.markdown
 ├── projects.markdown
 ├── about.markdown
-├── contact.markdown
+├── timeline.markdown
 ├── gallery.markdown
 └── portfolio.markdown
 ```

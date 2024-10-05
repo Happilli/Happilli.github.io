@@ -1,10 +1,10 @@
 :root {
-  --gap: 30px; 
-  --primary-color: #ffa500; 
-  --hover-color: #ff8c00; 
-  --text-color: #333; 
-  --subtext-color: #666; 
-  --shadow-color: rgba(0, 0, 0, 0.1); 
+  --gap: 30px;
+  --primary-color: #ffa500;
+  --hover-color: #ff8c00;
+  --text-color: #333;
+  --subtext-color: #666;
+  --shadow-color: rgba(0, 0, 0, 0.1);
 }
 
 .timeline {
