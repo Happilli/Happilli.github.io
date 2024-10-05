@@ -31,5 +31,9 @@ title: Home
 </section>
 
 <section id="timeline">
-
+ <h1>Timeline throughout my life</h1>
+    <!-- {% capture timeline_content %} -->
+    {% include_relative timeline.markdown %}
+    {% endcapture %}
+    {{ timeline_content | markdownify }}
 </section>
