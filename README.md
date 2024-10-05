@@ -5,9 +5,13 @@ website/
 ├── _layouts/
 │   └── default.html
 ├── assets/
+│   ├── css/
+│   │   ├── projects.css
+│   │   └── portfolio.css
+│   ├── js/
+│   │   ├── projects.js
+│   │   └── portfolio.js
 │   ├── styles.css
-│   ├── projects.css
-│   ├── projects.js
 │   ├── Noble_Auction.png
 │   └── safallama.jpg
 │   └── script.js
@@ -21,7 +25,6 @@ website/
 ├── contact.markdown
 ├── gallery.markdown
 └── portfolio.markdown
-
 ```
 
 my personal portfolio made on **jekyll**
