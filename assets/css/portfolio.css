@@ -28,7 +28,7 @@ body {
   padding: 20px;
   transition: transform 0.3s, box-shadow 0.3s;
   position: relative;
-  height: 250px;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -132,13 +132,13 @@ body {
   }
 
   .navbar li {
-    font-size: smaller;
+    font-size: small;
     margin: 0;
-    padding: 10px;
+    padding: 3px;
   }
   .navbar ul {
-    list-style: auto;
-    display: inline-flex;
+    list-style: none;
+    display: flex;
     padding: 0;
     margin: auto;
     font-size: small;
