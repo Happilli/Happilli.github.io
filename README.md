@@ -1,3 +1,5 @@
+
+```
 my-portfolio/
 ├── _config.yml
 ├── _includes/
@@ -16,5 +18,9 @@ my-portfolio/
 │   │   └── script.js
 └── index.markdown
 
+```
 
 it's made on jekyll framework 
+
+## DEMO
+![Demo GIF](/assets/img/demo.gif)
