@@ -68,17 +68,16 @@ nav ul li a.active {
 }
 
 .section {
-  height: 100vh; /* Maintain the full viewport height */
+  height: 100vh;
   padding: 20px;
   margin-bottom: 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-top: calc(
-    20px + 60px
-  ); /* Adjust for header height (20px padding + 60px estimated header height) */
-  box-sizing: border-box; /* Ensure padding doesn't affect height */
+  text-align: center;
+  padding-top: calc(20px + 60px);
+  box-sizing: border-box;
 }
 
 .section h2 {
@@ -89,9 +88,9 @@ nav ul li a.active {
   padding-top: 14px;
   display: block;
   margin: 0 auto;
+  border-radius: 100%;
   width: 400px;
   height: 400px;
-  border-radius: 50%;
 }
 
 .footer {
@@ -136,9 +135,35 @@ nav ul li a.active {
   .header-content {
     flex-direction: column;
   }
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin-right: 48px;
+  }
 
   nav ul li {
-    margin: 5px 0;
+    display: inline;
+    margin-right: 10px;
+  }
+
+  .header {
+    background-color: var(--footer-background);
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    margin: 0;
+  }
+
+  .footer {
+    background-color: var(--footer-background);
+    color: var(--footer-text);
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    margin: 0;
+    position: relative;
   }
 }
 
@@ -159,6 +184,36 @@ nav ul li a.active {
   color: var(--primary-color);
   font-size: 24px;
 }
+
+@media (max-width: 768px) {
+  .skills-list {
+    padding: 10px;
+    text-align: center;
+  }
+
+  .skills-list li {
+    display: inline-block;
+    font-size: 16px;
+    margin: 5px 10px;
+    text-align: center;
+  }
+
+  .skills-list li i {
+    font-size: 20px;
+    margin-right: 8px;
+  }
+
+  .circular-image {
+    padding-top: 14px;
+    display: block;
+    margin: 0 auto;
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
+    box-sizing: border-box;
+  }
+}
+
 ::-webkit-scrollbar {
   width: 10px;
 }
