@@ -236,7 +236,7 @@ nav ul li a.active {
 }
 
 .timeline {
-  background: white;
+  background: transparent;
   margin: 20px auto;
   padding: 20px;
 }
