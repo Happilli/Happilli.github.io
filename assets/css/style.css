@@ -68,13 +68,17 @@ nav ul li a.active {
 }
 
 .section {
-  height: 100vh;
+  height: 100vh; /* Maintain the full viewport height */
   padding: 20px;
   margin-bottom: 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding-top: calc(
+    20px + 60px
+  ); /* Adjust for header height (20px padding + 60px estimated header height) */
+  box-sizing: border-box; /* Ensure padding doesn't affect height */
 }
 
 .section h2 {
@@ -159,17 +163,14 @@ nav ul li a.active {
   width: 10px;
 }
 
-/* Track */
 ::-webkit-scrollbar-track {
   background: #f1f1f1;
 }
 
-/* Handle */
 ::-webkit-scrollbar-thumb {
   background: var(--primary-color);
 }
 
-/* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: var(--primary-color);
 }

@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
+  AOS.init();
   const typedText = document.querySelector(".typed-text");
   const phrases = [
     "Welcome to My Portfolio",
@@ -29,7 +30,6 @@ document.addEventListener("DOMContentLoaded", function () {
       e.preventDefault();
       const targetId = this.getAttribute("href");
       const targetSection = document.querySelector(targetId);
-
       if (targetSection) {
         smoothScrollTo(targetSection.offsetTop);
       }
@@ -46,47 +46,42 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-
   function smoothScrollTo(targetPosition) {
-    const startPosition = window.pageYOffset; 
+    const startPosition = window.pageYOffset;
     const distance = targetPosition - startPosition;
-    const duration = 800; 
+    const duration = 800;
     let startTime = null;
 
     function animation(currentTime) {
       if (startTime === null) startTime = currentTime;
       const timeElapsed = currentTime - startTime;
-      const progress = Math.min(timeElapsed / duration, 1); 
-
-      window.scrollTo(0, startPosition + distance * progress); 
-
+      const progress = Math.min(timeElapsed / duration, 1);
+      window.scrollTo(0, startPosition + distance * progress);
       if (timeElapsed < duration) {
-        requestAnimationFrame(animation); 
+        requestAnimationFrame(animation);
       }
     }
 
-    requestAnimationFrame(animation); 
+    requestAnimationFrame(animation);
   }
-
 
   const sections = document.querySelectorAll("section");
   const observerOptions = {
-    root: null, 
+    root: null,
     rootMargin: "0px",
-    threshold: 0.6, 
+    threshold: 0.6,
   };
 
   const observerCallback = (entries) => {
     entries.forEach((entry) => {
       const id = entry.target.getAttribute("id");
       const link = document.querySelector(`nav ul li a[href="#${id}"]`);
-
       if (entry.isIntersecting) {
         link.classList.add("active");
-        link.style.fontSize = "1.2em"; 
+        link.style.fontSize = "1.2em";
       } else {
         link.classList.remove("active");
-        link.style.fontSize = "1em"; 
+        link.style.fontSize = "1em";
       }
     });
   };

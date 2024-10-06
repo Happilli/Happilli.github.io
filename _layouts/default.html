@@ -8,7 +8,6 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
     />
-    <link rel="icon" href="/assets/img/safallama.jpg" type="image/png" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
@@ -17,11 +16,17 @@
       rel="stylesheet"
       href="{{ '/assets/css/style.css' | relative_url }}"
     />
+    <!-- AOS CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.css"
+    />
   </head>
   {% include header.html %}
   <body>
     <main>{{ content }}</main>
     <script src="{{ '/assets/js/script.js' | relative_url }}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
   </body>
   {% include footer.html %}
 </html>
