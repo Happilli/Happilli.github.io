@@ -10,6 +10,8 @@ my-portfolio/
 │   │   └── style.css
 │   └── img/
 │   │   └── safallama.jpg
+│   │   └── background.png
+│   │   └── background.jpg
 │   ├── js/
 │   │   └── script.js
 └── index.markdown
