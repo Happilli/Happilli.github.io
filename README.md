@@ -1,32 +1,18 @@
-```
-website/
-├── config.yml
-├── _posts/
+my-portfolio/
+├── _config.yml
+├── _includes/
+│   ├── footer.html
+│   └── header.html
 ├── _layouts/
 │   └── default.html
 ├── assets/
 │   ├── css/
-│   │   ├── projects.css
-│   │   └── portfolio.css
+│   │   └── style.css
+│   └── img/
+│   │   └── safallama.jpg
 │   ├── js/
-│   │   ├── projects.js
-│   │   └── portfolio.js
-│   ├── styles.css
-│   ├── Noble_Auction.png
-│   └── safallama.jpg
-│   └── script.js
-│   └── timeline.js
-│   └── timeline.css
-├── .gitignore
-├── 404.html
-├── Gemfile
-├── Gemfile.lock
-├── index.markdown
-├── projects.markdown
-├── about.markdown
-├── timeline.markdown
-├── gallery.markdown
-└── portfolio.markdown
-```
+│   │   └── script.js
+└── index.markdown
 
-my personal portfolio made on **jekyll**
+
+it's made on jekyll framework 
