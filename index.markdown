@@ -6,7 +6,9 @@ title: Home
 <body>
   <main>
     <div style="text-align: center;">
-      <img src="{{ '/assets/img/safallama.jpg' | relative_url }}" alt="Safal Lama" class="circular-image" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+    <div class="circular-image-wrapper">
+      <img src="{{ '/assets/img/safallama.jpg' | relative_url }}" alt="Safal Lama" class="circular-image">
+      </div>
       <div class="typed-container">
         <h2 class="typed-text"></h2>
       </div>
@@ -63,6 +65,7 @@ title: Home
       <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" width="48" title="Linux" data-aos="fade-up" data-aos-delay="2000" />
       <img src="https://img.icons8.com/fluency/48/fingerprint.png" width="48" title="Cybersecurity" data-aos="fade-up" data-aos-delay="2100" />
     </div>
+
   </div>
 </section>
 <section id="projects" class="section">
