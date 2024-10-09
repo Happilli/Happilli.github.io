@@ -77,37 +77,44 @@ title: Home
           <h3 class="title">Noble Auction</h3>
           <p>
             <i class="fas fa-code"></i> Made on vb.net Framework
-            <a href="YOUR_LOCATION_LINK" target="_blank" class="location-icon" style="color: black;">
+            <a href="https://github.com/RyuZinOh/nobleAuction" target="_blank" class="location-icon" style="color: black;">
               <i class="fas fa-map-marker-alt"></i>
             </a>
           </p>
         </div>
       </div>
-      <div class="card">
-        <div class="info">
-          <h3 class="title">Saman Website</h3>
-          <p>
-            <i class="fab fa-js"></i> Made on Next.js
-            <a href="YOUR_LOCATION_LINK" target="_blank" class="location-icon" style="color: black;">
-              <i class="fas fa-map-marker-alt"></i>
-            </a>
-          </p>
-        </div>
-      </div>
+     <div class="card">
+  <div class="info">
+    <h3 class="title">
+      <a href="https://saber-form.vercel.app/" target="_blank" style="color: green; text-decoration: none;">
+        Saman Website
+      </a>
+    </h3>
+    <p>
+      <i class="fab fa-js"></i> Made on Next.js
+      <a href="https://saber-form.vercel.app/" target="_blank" class="location-icon" style="color: black;">
+        <i class="fas fa-map-marker-alt"></i>
+      </a>
+    </p>
+  </div>
+</div>
+
       <div class="card">
         <div class="info">
           <h3 class="title">pokemon JP</h3>
           <p>
             <i class="fab fa-laravel"></i> Made on Laravel
-            <a href="YOUR_LOCATION_LINK" target="_blank" class="location-icon" style="color: black;">
+            <a href="https://github.com/RyuZinOh/pokemonJP" target="_blank" class="location-icon" style="color: black;">
               <i class="fas fa-map-marker-alt"></i>
             </a>
           </p>
         </div>
       </div>
     </div>
+
   </div>
 </section>
+
 <section id="contact" class="contact-section">
     <h2 class="contact-title">Contact</h2>
     <p class="contact-text">

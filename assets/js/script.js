@@ -90,6 +90,18 @@ document.addEventListener("DOMContentLoaded", function () {
   sections.forEach((section) => {
     observer.observe(section);
   });
+
+  let lastScrollTop = 0;
+  const footer = document.querySelector(".footer");
+
+  window.addEventListener("scroll", function () {
+    let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+    if (scrollTop > lastScrollTop) {
+      footer.style.transform = "translate(-50%, 100%)";
+    } else {
+      footer.style.transform = "translate(-50%, 0)";
+    }
+    lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+  });
 });
-
-
