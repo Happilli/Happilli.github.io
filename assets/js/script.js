@@ -95,13 +95,19 @@ document.addEventListener("DOMContentLoaded", function () {
   const footer = document.querySelector(".footer");
 
   window.addEventListener("scroll", function () {
-    let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
-    if (scrollTop > lastScrollTop) {
-      footer.style.transform = "translate(-50%, 100%)";
+    if (
+      scrollTop + window.innerHeight >=
+      document.documentElement.scrollHeight
+    ) {
+      footer.style.transform = "translateY(0)"; 
+    } else if (scrollTop > lastScrollTop) {
+      footer.style.transform = "translateY(100%)";
     } else {
-      footer.style.transform = "translate(-50%, 0)";
+      footer.style.transform = "translateY(0)";
     }
-    lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+
+    lastScrollTop = scrollTop;
   });
 });
