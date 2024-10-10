@@ -223,4 +223,24 @@ jekyll-archives:
   permalinks:
     tag: /tags/:name/
     category: /categories/:name/
+    
+icons:
+  python: "https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg"
+  javascript: "https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"
+  cplusplus: "https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg"
+  c: "https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg"
+  mysql: "https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original.svg"
+  bash: "https://raw.githubusercontent.com/devicons/devicon/master/icons/bash/bash-original.svg"
+  csharp: "https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg"
+  vbnet: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/visualbasic/visualbasic-original.svg"
+  nextjs: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg"
+  reactjs: "https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg"
+  nodejs: "https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg"
+  firebase: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-plain.svg"
+  bootstrap: "https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-original.svg"
+  tailwind: "https://raw.githubusercontent.com/devicons/devicon/master/icons/tailwindcss/tailwindcss-original.svg"
+  jekyll: "https://raw.githubusercontent.com/devicons/devicon/master/icons/jekyll/jekyll-original.svg"
+  java: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-plain.svg"
+  linux: "https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg"
+  cybersecurity: "https://img.icons8.com/fluency/48/fingerprint.png"
 
