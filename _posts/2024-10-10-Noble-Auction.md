@@ -9,9 +9,9 @@ image: /assets/image/nobleAuction.png
 
 This project of mine is a Windows application that works on a centralized network where only one is a host. The host places their auction item, and the connecting members (exclusive) will do the bidding until the specified time limit.
 
-**ER Diagram:** [View Image](https://media.discordapp.net/attachments/1272169961342636165/1272170048206934037/image.png?ex=67091a2f&is=6707c8af&hm=b95c38cf577a3d82daaee066acf1e32ccd8a740feba7016d84d301252f227cd3&=&format=webp&quality=lossless&width=1249&height=684)
+**ER Diagram:** [View Image](https://github.com/RyuZinOh/static-assets/blob/main/nobleAuction/nobleAuction-ER.png)
 
-**Use Case Diagram:** [View Image](https://media.discordapp.net/attachments/1272169961342636165/1272170089671688316/image.png?ex=67091a39&is=6707c8b9&hm=72d748db128a26a1b5404341987151a70080672d032885a8844d8271a903b70d&=&format=webp&quality=lossless&width=720&height=467)
+**Use Case Diagram:** [View Image](https://github.com/RyuZinOh/static-assets/blob/main/nobleAuction/nobleAuction-UC.png)
 
 ### GitHub Badges
 
@@ -23,4 +23,6 @@ This project of mine is a Windows application that works on a centralized networ
 
 [GitHub Repository](https://github.com/RyuZinOh/nobleAuction)
 
-<iframe width="640" height="480" src="https://www.youtube.com/embed/YoYwOuzdHeQ" frameborder="0" allowfullscreen></iframe>
+<iframe width="1920" height="1080" src="https://www.youtube.com/embed/YoYwOuzdHeQ" frameborder="0" allowfullscreen></iframe>1920
+
+
