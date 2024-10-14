@@ -8,10 +8,9 @@ image: /assets/image/nobleAuction.png
 ---
 
 This project of mine is a Windows application that works on a centralized network where only one is a host. The host places their auction item, and the connecting members (exclusive) will do the bidding until the specified time limit.
+![ER Diagram](https://github.com/RyuZinOh/static-assets/blob/main/nobleAuction/nobleAuction-ER.png?raw=true)
+![Use Case Diagram](https://github.com/RyuZinOh/static-assets/blob/main/nobleAuction/nobleAuction-UC.png?raw=true)
 
-**ER Diagram:** [View Image](https://github.com/RyuZinOh/static-assets/blob/main/nobleAuction/nobleAuction-ER.png)
-
-**Use Case Diagram:** [View Image](https://github.com/RyuZinOh/static-assets/blob/main/nobleAuction/nobleAuction-UC.png)
 
 ### GitHub Badges
 
@@ -23,6 +22,6 @@ This project of mine is a Windows application that works on a centralized networ
 
 [GitHub Repository](https://github.com/RyuZinOh/nobleAuction)
 
-<iframe width="1920" height="1080" src="https://www.youtube.com/embed/YoYwOuzdHeQ" frameborder="0" allowfullscreen></iframe>1920
+<iframe width="640" height="480" src="https://www.youtube.com/embed/YoYwOuzdHeQ" frameborder="0" allowfullscreen></iframe>1920
 
 
