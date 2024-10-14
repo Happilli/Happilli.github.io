@@ -23,7 +23,4 @@ This project of mine is a Windows application that works on a centralized networ
 
 [GitHub Repository](https://github.com/RyuZinOh/nobleAuction)
 
-<video width="640" height="480" controls>
-  <source src="./assets/image/tuto1.mkv" type="video/x-matroska">
-  Your browser does not support the video tag.
-</video>
+<iframe width="640" height="480" src="https://www.youtube.com/embed/YoYwOuzdHeQ" frameborder="0" allowfullscreen></iframe>
