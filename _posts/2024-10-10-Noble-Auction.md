@@ -25,6 +25,6 @@ This project of mine is a Windows application that works on a centralized networ
 
 [GitHub Repository](https://github.com/RyuZinOh/nobleAuction)
 
-<iframe width="640" height="480" src="https://www.youtube.com/embed/YoYwOuzdHeQ" frameborder="0" allowfullscreen></iframe>
+<iframe width="400" height="300" src="https://www.youtube.com/embed/YoYwOuzdHeQ" frameborder="0" allowfullscreen></iframe>
 
 
