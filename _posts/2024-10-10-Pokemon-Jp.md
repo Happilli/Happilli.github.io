@@ -8,3 +8,9 @@ image: /assets/image/pokeJP.png
 ---
 
 
+## 🚧 Under Work 🚧
+
+This project is currently under development. Stay tuned for updates!
+
+<iframe src="https://lottie.host/embed/25555388-244e-4a0d-9c82-e8eb22d338a4/pZblz94Wyy.json"></iframe>
+
