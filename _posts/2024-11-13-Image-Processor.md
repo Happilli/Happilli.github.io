@@ -101,16 +101,6 @@ Feel free to make modifications and submit a pull request. I’ll review it and 
 The Docker image prioritizes functionality over UI/UX since it was originally a prototype. However, following the setup instructions ensures the application runs as expected.
 
 ---
-
-## Demo Profile
-
-Here’s a demo profile image displayed in a table:
-
-| **Item**           | **Description**                                                                                                                                              |
-|--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Demo Profile**    | <img src="https://github.com/RyuZinOh/static-assets/blob/main/processedIMage/saverCard.png?raw=true" width="300" />                                               |
-                                      
-
 ### Demo Video:
 <iframe width="400" height="300" src="https://www.youtube.com/embed/dyYMlzPuIdw" frameborder="0" allowfullscreen></iframe>
 
