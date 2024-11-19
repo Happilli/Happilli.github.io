@@ -9,6 +9,8 @@ order: 4
 ![About](/assets/image/sanatoSae.png)
 
 I'm Safal Lama, a `full stack web developer` and `cybersecurity enthusiast` from Nepal.
+<br>
+`i average 120 wpm`
 
 ## Tools & Technologies
 
@@ -67,9 +69,25 @@ I'm Safal Lama, a `full stack web developer` and `cybersecurity enthusiast` from
     <div>
         <img src="{{ site.icons.cybersecurity }}" alt="Cybersecurity" style="width: 50px; height: 50px;">
     </div>
+    <div>
+        <img src="{{ site.icons.docker }}" alt="docker" style="width: 50px; height: 50px;">
+    </div>
+     <div>
+        <img src="{{ site.icons.flask }}" alt="flask" style="width: 50px; height: 50px;">
+    </div>
+     <div>
+        <img src="{{ site.icons.laravel }}" alt="larvel" style="width: 50px; height: 50px;">
+    </div>
+    <div>
+        <img src="{{ site.icons.express }}" alt="express" style="width: 50px; height: 50px;">
+    </div>
 </div>
 
 ## Let's Connect
+
 - [GitHub](https://github.com/ryuzinoh)
 - [LinkedIn](https://www.linkedin.com/in/safal-lama-379738330/)
 - Email: yoyuehappy@gmail.com
+
+
+

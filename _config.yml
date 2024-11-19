@@ -243,4 +243,7 @@ icons:
   java: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-plain.svg"
   linux: "https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg"
   cybersecurity: "https://img.icons8.com/fluency/48/fingerprint.png"
-
+  docker: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original-wordmark.svg"
+  flask: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flask/flask-original.svg"
+  laravel: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/laravel/laravel-original.svg"
+  express: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg"
