@@ -81,6 +81,9 @@ I'm Safal Lama, a `full stack web developer` and `cybersecurity enthusiast` from
     <div>
         <img src="{{ site.icons.express }}" alt="express" style="width: 50px; height: 50px;">
     </div>
+    <div>
+        <img src="{{ site.icons.mongo }}" alt="mongo" style="width: 50px; height: 50px;">
+    </div>
 </div>
 
 ## Let's Connect
