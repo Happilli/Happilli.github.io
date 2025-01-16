@@ -88,18 +88,18 @@ I'm Safal Lama, a `full stack web developer` and `cybersecurity enthusiast` from
 ## GitHub Stats for RyuZinOh
 
 <div style="display: flex; flex-direction: column; align-items: flex-start;">
-    <!-- GitHub Stats -->
-    <img src="https://github-readme-stats.vercel.app/api?username=ryuzinoh&show_icons=true&theme=midnight-purple" alt="Safal's GitHub stats" style="width: 48%; margin-bottom: 10px;">
-
-    <!-- GitHub Streak Stats -->
     <img src="https://github-readme-streak-stats.herokuapp.com/?user=ryuzinoh&theme=midnight-purple" alt="GitHub Streak Stats" style="width: 48%; margin-bottom: 10px;">
 
-    <!-- Most Used Languages -->
-    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ryuzinoh&layout=compact&theme=midnight-purple" alt="Most Used Languages" style="width: 100%;">
 </div>
 
-## Let's Connect
 
-- [GitHub](https://github.com/ryuzinoh)  
-- [LinkedIn](https://www.linkedin.com/in/safal-lama-379738330/)  
-- Email: yoyuehappy@gmail.com
+## Let's Connect
+<p style="font-size: 20px;">
+  <a href="https://github.com/happilli"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v6/icons/github.svg" alt="GitHub" width="35" height="35" /></a>
+  <a href="https://www.linkedin.com/in/safal-lama-379738330/"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v6/icons/linkedin.svg" alt="LinkedIn" width="35" height="35" /></a>
+  <a href="https://www.instagram.com/happillli_/"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v6/icons/instagram.svg" alt="Instagram" width="35" height="35" /></a>
+  <a href="https://www.facebook.com/myExistenceIsMythToMyOwnPast/"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v6/icons/facebook.svg" alt="Facebook" width="35" height="35" /></a>
+  <a href="https://twitter.com/yoyuehappy"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v6/icons/twitter.svg" alt="Twitter" width="35" height="35" /></a>
+</p> 
+
+## Email: yoyuehappy@gmail.com
