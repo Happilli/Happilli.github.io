@@ -86,7 +86,7 @@ I'm Safal Lama, a `full stack web developer` and `cybersecurity enthusiast` from
         <img src="{{ site.icons.fastapi }}" alt="fastAPI" style="width: 50px; height: 50px;">
     </div>
       <div>
-        <img src="{{ site.icons.supabase}}" alt="supbasea" style="width: 50px; height: 50px;">
+        <img src="{{ site.icons.supabase}}" alt="supbasec" style="width: 50px; height: 50px;">
     </div>  
     <div>
         <img src="{{ site.icons.neovim}}" alt="neovim" style="width: 50px; height: 50px;">
