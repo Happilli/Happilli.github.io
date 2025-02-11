@@ -248,3 +248,9 @@ icons:
   laravel: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/laravel/laravel-original.svg"
   express: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg"
   mongo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original-wordmark.svg"
+  fastapi: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/fastapi/fastapi-original.svg"
+  supabase: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/supabase/supabase-plain-wordmark.svg"
+  neovim: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/neovim/neovim-plain.svg"
+  lua: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/lua/lua-plain.svg"
+  rust: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rust/rust-line.svg"
+

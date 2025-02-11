@@ -82,13 +82,28 @@ I'm Safal Lama, a `full stack web developer` and `cybersecurity enthusiast` from
     <div>
         <img src="{{ site.icons.mongo }}" alt="MongoDB" style="width: 50px; height: 50px;">
     </div>
+      <div>
+        <img src="{{ site.icons.fastapi }}" alt="fastAPI" style="width: 50px; height: 50px;">
+    </div>
+      <div>
+        <img src="{{ site.icons.supabase}}" alt="supbasea" style="width: 50px; height: 50px;">
+    </div>  
+    <div>
+        <img src="{{ site.icons.neovim}}" alt="neovim" style="width: 50px; height: 50px;">
+    </div>
+  <div>
+        <img src="{{ site.icons.lua }}" alt="lua" style="width: 50px; height: 50px;">
+    </div>
+      <div>
+        <img src="{{ site.icons.rust }}" alt="rust" style="width: 50px; height: 50px;">
+    </div>
 </div>
 
 
 ## GitHub Stats for RyuZinOh
 
 <div style="display: flex; flex-direction: column; align-items: flex-start;">
-    <img src="https://dealer.safallama.com.np/streak/ryuzinoh/image" alt="GitHub Streak Stats" style="width: 520px; margin-bottom: 10px;">
+    <img src="https://github-streaks.onrender.com/streak/ryuzinoh/image?cache_bust=69" alt="GitHub Streak Stats" style="width: 520px; margin-bottom: 10px;">
 
 </div>
 
