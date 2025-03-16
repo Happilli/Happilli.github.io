@@ -117,4 +117,4 @@ I'm Safal Lama, a `full stack web developer` and `cybersecurity enthusiast` from
   <a href="https://twitter.com/yoyuehappy"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v6/icons/twitter.svg" alt="Twitter" width="35" height="35" /></a>
 </p> 
 
-## Email: yoyuehappy@gmail.com
+## Email: serena@safallama.com.np
