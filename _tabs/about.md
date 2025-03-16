@@ -103,7 +103,7 @@ I'm Safal Lama, a `full stack web developer` and `cybersecurity enthusiast` from
 ## GitHub Stats for RyuZinOh
 
 <div style="display: flex; flex-direction: column; align-items: flex-start;">
-    <img src="https://github-streaks-87nn.onrender.com/streak/ryuzinoh/image" alt="GitHub Streak Stats" style="width: 520px; margin-bottom: 10px;">
+    <img src="https://github-streaks-mqc9.onrender.com/streak/ryuzinoh/image" alt="GitHub Streak Stats" style="width: 520px; margin-bottom: 10px;">
 
 </div>
 
