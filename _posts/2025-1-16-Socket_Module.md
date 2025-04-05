@@ -15,6 +15,6 @@ The project includes a server-side implementation stored in the repository's   `
 
 ## Demo
 
-<iframe width="400" height="300" src="https://www.youtube.com/embed/tUhjf51QVMo" frameborder="0" allowfullscreen></iframe>
+{% include embed/youtube.html id='tUhjf51QVMo' %}
 
 Discover the source code on [GitHub](https://github.com/RyuZinOh/chatting-module-socket).

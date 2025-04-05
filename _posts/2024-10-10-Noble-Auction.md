@@ -19,6 +19,6 @@ This project of mine is a Windows application that works on a centralized networ
 ### GitHub Repository
 [Noble Auction](https://github.com/RyuZinOh/nobleAuction)
 
-<iframe width="400" height="300" src="https://www.youtube.com/embed/YoYwOuzdHeQ" frameborder="0" allowfullscreen></iframe>
+{% include embed/youtube.html id='YoYwOuzdHeQ' %}
 
 
