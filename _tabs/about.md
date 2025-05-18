@@ -5,7 +5,7 @@ order: 4
 
 # Namaste!
 
-![About](/assets/image/sanatoSae.png)
+![About](/assets/image/sanatoSae.jpg)
 
 I'm Safal Lama, a `full stack web developer` and `cybersecurity enthusiast` from Nepal.  
 `i average 127 wpm`
