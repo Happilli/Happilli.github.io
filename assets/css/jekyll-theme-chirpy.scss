@@ -1,0 +1,31 @@
+---
+---
+
+/* prettier-ignore */
+@use 'main
+{%- if jekyll.environment == 'production' -%}
+  .bundle
+{%- endif -%}
+';
+
+/* append your custom style below */
+#sidebar {
+  background: white;
+}
+#sidebar ul li.nav-item.active .nav-link {
+  background-color: white;
+  color: #000000;
+  font-weight: bold;
+}
+
+#sidebar ul li.nav-item a.nav-link:hover {
+  background-color: white;
+  color: #000000;
+  font-weight: bold;
+}
+
+#sidebar .sidebar-bottom {
+  padding-left: 3.8rem;
+  padding-right: 1rem;
+  margin-bottom: 1.5rem;
+}
